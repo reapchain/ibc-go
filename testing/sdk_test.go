@@ -25,7 +25,7 @@ import (
 	"github.com/cosmos/ibc-go/v2/testing/simapp/params"
 	"github.com/spf13/cobra"
 	"github.com/stretchr/testify/suite"
-	tmrand "github.com/tendermint/tendermint/libs/rand"
+	tmrand "github.com/reapchain/reapchain-core/libs/rand"
 	dbm "github.com/tendermint/tm-db"
 
 	ibcclientcli "github.com/cosmos/ibc-go/v2/modules/core/02-client/client/cli"

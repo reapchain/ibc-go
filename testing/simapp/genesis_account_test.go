@@ -10,7 +10,7 @@ import (
 	"github.com/cosmos/ibc-go/v2/testing/simapp"
 
 	"github.com/stretchr/testify/require"
-	"github.com/tendermint/tendermint/crypto"
+	"github.com/reapchain/reapchain-core/crypto"
 )
 
 func TestSimGenesisAccountValidate(t *testing.T) {

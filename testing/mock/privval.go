@@ -1,13 +1,14 @@
 package mock
 
 import (
-	"github.com/tendermint/tendermint/crypto"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	tmtypes "github.com/tendermint/tendermint/types"
+	"github.com/reapchain/reapchain-core/crypto"
+	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
+	tmtypes "github.com/reapchain/reapchain-core/types"
 
 	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
 	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
 	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
+	"github.com/reapchain/reapchain-core/vrfunc"
 )
 
 var _ tmtypes.PrivValidator = PV{}
@@ -46,5 +47,35 @@ func (pv PV) SignProposal(chainID string, proposal *tmproto.Proposal) error {
 		return err
 	}
 	proposal.Signature = sig
+	return nil
+}
+
+
+func (pv PV) SignQrn(qrn *tmtypes.Qrn) error {
+	signBytes := qrn.GetQrnBytesForSign()
+	sig, err := pv.PrivKey.Sign(signBytes)
+	if err != nil {
+		return err
+	}
+	qrn.Signature = sig
+	return nil
+}
+
+func (pv PV) SignSettingSteeringMember(settingSteeringMember *tmtypes.SettingSteeringMember) error {
+	signBytes := settingSteeringMember.GetSettingSteeringMemberBytesForSign()
+	sig, err := pv.PrivKey.Sign(signBytes)
+	if err != nil {
+		return err
+	}
+	settingSteeringMember.Signature = sig
+	return nil
+}
+
+func (pv PV) ProveVrf(vrf *tmtypes.Vrf) error {
+	privateKey := vrfunc.PrivateKey(pv.PrivKey.Bytes())
+	value, proof := privateKey.Prove(vrf.Seed)
+	vrf.Value = value
+	vrf.Proof = proof
+
 	return nil
 }

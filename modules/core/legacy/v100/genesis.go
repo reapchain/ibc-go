@@ -4,7 +4,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/codec"
 	genutiltypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
-	tmtypes "github.com/tendermint/tendermint/types"
+	tmtypes "github.com/reapchain/reapchain-core/types"
 
 	clientv100 "github.com/cosmos/ibc-go/v2/modules/core/02-client/legacy/v100"
 	clienttypes "github.com/cosmos/ibc-go/v2/modules/core/02-client/types"

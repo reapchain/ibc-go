@@ -83,7 +83,7 @@ Ref: https://keepachangelog.com/en/1.0.0/
 
 ### Dependencies
 
-* [\#386](https://github.com/cosmos/ibc-go/pull/386) Bump [tendermint](https://github.com/tendermint/tendermint) from v0.34.12 to v0.34.13.
+* [\#386](https://github.com/cosmos/ibc-go/pull/386) Bump [tendermint](https://github.com/reapchain/reapchain-core) from v0.34.12 to v0.34.13.
 
 ## [v1.1.3](https://github.com/cosmos/ibc-go/releases/tag/v1.1.3) - 2021-11-09
 

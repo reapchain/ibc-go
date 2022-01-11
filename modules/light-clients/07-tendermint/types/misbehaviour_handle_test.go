@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/tendermint/tendermint/crypto/tmhash"
-	tmtypes "github.com/tendermint/tendermint/types"
+	"github.com/reapchain/reapchain-core/crypto/tmhash"
+	tmtypes "github.com/reapchain/reapchain-core/types"
 
 	clienttypes "github.com/cosmos/ibc-go/v2/modules/core/02-client/types"
 	commitmenttypes "github.com/cosmos/ibc-go/v2/modules/core/23-commitment/types"

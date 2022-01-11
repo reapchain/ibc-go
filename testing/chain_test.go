@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	tmtypes "github.com/tendermint/tendermint/types"
+	tmtypes "github.com/reapchain/reapchain-core/types"
 
 	ibctesting "github.com/cosmos/ibc-go/v2/testing"
 	"github.com/cosmos/ibc-go/v2/testing/mock"
