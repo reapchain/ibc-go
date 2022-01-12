@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/reapchain/cosmos-sdk/codec"
-	"github.com/cosmos/ibc-go/v2/modules/core/exported"
+	"github.com/reapchain/ibc-go/modules/core/exported"
 )
 
 // MustUnmarshalClientState attempts to decode and return an ClientState object from

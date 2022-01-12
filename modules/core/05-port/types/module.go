@@ -4,8 +4,8 @@ import (
 	sdk "github.com/reapchain/cosmos-sdk/types"
 
 	capabilitytypes "github.com/reapchain/cosmos-sdk/x/capability/types"
-	channeltypes "github.com/cosmos/ibc-go/v2/modules/core/04-channel/types"
-	"github.com/cosmos/ibc-go/v2/modules/core/exported"
+	channeltypes "github.com/reapchain/ibc-go/modules/core/04-channel/types"
+	"github.com/reapchain/ibc-go/modules/core/exported"
 )
 
 // IBCModule defines an interface that implements all the callbacks

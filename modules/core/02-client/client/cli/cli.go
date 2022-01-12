@@ -4,7 +4,7 @@ import (
 	"github.com/spf13/cobra"
 
 	"github.com/reapchain/cosmos-sdk/client"
-	"github.com/cosmos/ibc-go/v2/modules/core/02-client/types"
+	"github.com/reapchain/ibc-go/modules/core/02-client/types"
 )
 
 // GetQueryCmd returns the query commands for IBC clients

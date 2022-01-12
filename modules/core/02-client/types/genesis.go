@@ -5,8 +5,8 @@ import (
 	"sort"
 
 	codectypes "github.com/reapchain/cosmos-sdk/codec/types"
-	host "github.com/cosmos/ibc-go/v2/modules/core/24-host"
-	"github.com/cosmos/ibc-go/v2/modules/core/exported"
+	host "github.com/reapchain/ibc-go/modules/core/24-host"
+	"github.com/reapchain/ibc-go/modules/core/exported"
 )
 
 var (

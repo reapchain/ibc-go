@@ -2,8 +2,8 @@ package channel
 
 import (
 	sdk "github.com/reapchain/cosmos-sdk/types"
-	"github.com/cosmos/ibc-go/v2/modules/core/04-channel/keeper"
-	"github.com/cosmos/ibc-go/v2/modules/core/04-channel/types"
+	"github.com/reapchain/ibc-go/modules/core/04-channel/keeper"
+	"github.com/reapchain/ibc-go/modules/core/04-channel/types"
 )
 
 // InitGenesis initializes the ibc channel submodule's state from a provided genesis

@@ -3,9 +3,9 @@ package types_test
 import (
 	cryptotypes "github.com/reapchain/cosmos-sdk/crypto/types"
 	"github.com/reapchain/cosmos-sdk/types/tx/signing"
-	"github.com/cosmos/ibc-go/v2/modules/light-clients/06-solomachine/types"
-	solomachinetypes "github.com/cosmos/ibc-go/v2/modules/light-clients/06-solomachine/types"
-	ibctesting "github.com/cosmos/ibc-go/v2/testing"
+	"github.com/reapchain/ibc-go/modules/light-clients/06-solomachine/types"
+	solomachinetypes "github.com/reapchain/ibc-go/modules/light-clients/06-solomachine/types"
+	ibctesting "github.com/reapchain/ibc-go/testing"
 )
 
 func (suite *SoloMachineTestSuite) TestVerifySignature() {

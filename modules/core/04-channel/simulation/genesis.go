@@ -4,7 +4,7 @@ import (
 	"math/rand"
 
 	simtypes "github.com/reapchain/cosmos-sdk/types/simulation"
-	"github.com/cosmos/ibc-go/v2/modules/core/04-channel/types"
+	"github.com/reapchain/ibc-go/modules/core/04-channel/types"
 )
 
 // GenChannelGenesis returns the default channel genesis state.

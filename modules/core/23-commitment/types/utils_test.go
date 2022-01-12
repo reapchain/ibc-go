@@ -7,7 +7,7 @@ import (
 	abci "github.com/reapchain/reapchain-core/abci/types"
 	crypto "github.com/reapchain/reapchain-core/proto/reapchain/crypto"
 
-	"github.com/cosmos/ibc-go/v2/modules/core/23-commitment/types"
+	"github.com/reapchain/ibc-go/modules/core/23-commitment/types"
 )
 
 func (suite *MerkleTestSuite) TestConvertProofs() {

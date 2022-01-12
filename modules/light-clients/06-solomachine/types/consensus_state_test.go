@@ -1,9 +1,9 @@
 package types_test
 
 import (
-	"github.com/cosmos/ibc-go/v2/modules/core/exported"
-	"github.com/cosmos/ibc-go/v2/modules/light-clients/06-solomachine/types"
-	ibctesting "github.com/cosmos/ibc-go/v2/testing"
+	"github.com/reapchain/ibc-go/modules/core/exported"
+	"github.com/reapchain/ibc-go/modules/light-clients/06-solomachine/types"
+	ibctesting "github.com/reapchain/ibc-go/testing"
 )
 
 func (suite *SoloMachineTestSuite) TestConsensusState() {

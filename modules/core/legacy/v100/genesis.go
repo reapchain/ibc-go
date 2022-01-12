@@ -6,11 +6,11 @@ import (
 	genutiltypes "github.com/reapchain/cosmos-sdk/x/genutil/types"
 	tmtypes "github.com/reapchain/reapchain-core/types"
 
-	clientv100 "github.com/cosmos/ibc-go/v2/modules/core/02-client/legacy/v100"
-	clienttypes "github.com/cosmos/ibc-go/v2/modules/core/02-client/types"
-	connectiontypes "github.com/cosmos/ibc-go/v2/modules/core/03-connection/types"
-	host "github.com/cosmos/ibc-go/v2/modules/core/24-host"
-	"github.com/cosmos/ibc-go/v2/modules/core/types"
+	clientv100 "github.com/reapchain/ibc-go/modules/core/02-client/legacy/v100"
+	clienttypes "github.com/reapchain/ibc-go/modules/core/02-client/types"
+	connectiontypes "github.com/reapchain/ibc-go/modules/core/03-connection/types"
+	host "github.com/reapchain/ibc-go/modules/core/24-host"
+	"github.com/reapchain/ibc-go/modules/core/types"
 )
 
 // MigrateGenesis accepts exported v1.0.0 IBC client genesis file and migrates it to:

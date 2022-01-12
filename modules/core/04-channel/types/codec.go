@@ -5,7 +5,7 @@ import (
 	codectypes "github.com/reapchain/cosmos-sdk/codec/types"
 	sdk "github.com/reapchain/cosmos-sdk/types"
 	"github.com/reapchain/cosmos-sdk/types/msgservice"
-	"github.com/cosmos/ibc-go/v2/modules/core/exported"
+	"github.com/reapchain/ibc-go/modules/core/exported"
 )
 
 // RegisterInterfaces register the ibc channel submodule interfaces to protobuf

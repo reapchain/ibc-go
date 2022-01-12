@@ -29,9 +29,9 @@ import (
 	"github.com/reapchain/cosmos-sdk/x/simulation"
 	slashingtypes "github.com/reapchain/cosmos-sdk/x/slashing/types"
 	stakingtypes "github.com/reapchain/cosmos-sdk/x/staking/types"
-	ibctransfertypes "github.com/cosmos/ibc-go/v2/modules/apps/transfer/types"
-	ibchost "github.com/cosmos/ibc-go/v2/modules/core/24-host"
-	"github.com/cosmos/ibc-go/v2/testing/simapp/helpers"
+	ibctransfertypes "github.com/reapchain/ibc-go/modules/apps/transfer/types"
+	ibchost "github.com/reapchain/ibc-go/modules/core/24-host"
+	"github.com/reapchain/ibc-go/testing/simapp/helpers"
 )
 
 // Get flags every time the simulator is run

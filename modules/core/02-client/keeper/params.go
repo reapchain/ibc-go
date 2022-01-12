@@ -2,7 +2,7 @@ package keeper
 
 import (
 	sdk "github.com/reapchain/cosmos-sdk/types"
-	"github.com/cosmos/ibc-go/v2/modules/core/02-client/types"
+	"github.com/reapchain/ibc-go/modules/core/02-client/types"
 )
 
 // GetAllowedClients retrieves the allowed clients from the paramstore

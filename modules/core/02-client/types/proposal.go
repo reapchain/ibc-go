@@ -7,7 +7,7 @@ import (
 	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
 	govtypes "github.com/reapchain/cosmos-sdk/x/gov/types"
 	upgradetypes "github.com/reapchain/cosmos-sdk/x/upgrade/types"
-	"github.com/cosmos/ibc-go/v2/modules/core/exported"
+	"github.com/reapchain/ibc-go/modules/core/exported"
 )
 
 const (

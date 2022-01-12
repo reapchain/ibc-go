@@ -7,7 +7,7 @@ import (
 	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
 	tmtypes "github.com/reapchain/reapchain-core/types"
 
-	"github.com/cosmos/ibc-go/v2/testing/mock"
+	"github.com/reapchain/ibc-go/testing/mock"
 )
 
 const chainID = "testChain"

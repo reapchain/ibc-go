@@ -6,8 +6,8 @@ import (
 	"github.com/stretchr/testify/require"
 	tmtypes "github.com/reapchain/reapchain-core/types"
 
-	ibctesting "github.com/cosmos/ibc-go/v2/testing"
-	"github.com/cosmos/ibc-go/v2/testing/mock"
+	ibctesting "github.com/reapchain/ibc-go/testing"
+	"github.com/reapchain/ibc-go/testing/mock"
 )
 
 func TestCreateSortedSignerArray(t *testing.T) {

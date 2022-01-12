@@ -255,8 +255,8 @@ import (
 	"github.com/reapchain/reapchain-core/libs/log"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/cosmos/ibc-go/v2/modules/apps/transfer/simapp"
-	ibctesting "github.com/cosmos/ibc-go/v2/testing"
+	"github.com/reapchain/ibc-go/modules/apps/transfer/simapp"
+	ibctesting "github.com/reapchain/ibc-go/testing"
 )
 
 func SetupTransferTestingApp() (ibctesting.TestingApp, map[string]json.RawMessage) {

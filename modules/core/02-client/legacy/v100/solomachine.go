@@ -7,7 +7,7 @@ import (
 	cryptotypes "github.com/reapchain/cosmos-sdk/crypto/types"
 	sdk "github.com/reapchain/cosmos-sdk/types"
 
-	"github.com/cosmos/ibc-go/v2/modules/core/exported"
+	"github.com/reapchain/ibc-go/modules/core/exported"
 )
 
 // NOTE: this is a mock implmentation for exported.ClientState. This implementation

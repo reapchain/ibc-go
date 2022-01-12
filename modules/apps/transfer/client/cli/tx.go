@@ -11,9 +11,9 @@ import (
 	"github.com/reapchain/cosmos-sdk/client/tx"
 	sdk "github.com/reapchain/cosmos-sdk/types"
 	"github.com/reapchain/cosmos-sdk/version"
-	"github.com/cosmos/ibc-go/v2/modules/apps/transfer/types"
-	clienttypes "github.com/cosmos/ibc-go/v2/modules/core/02-client/types"
-	channelutils "github.com/cosmos/ibc-go/v2/modules/core/04-channel/client/utils"
+	"github.com/reapchain/ibc-go/modules/apps/transfer/types"
+	clienttypes "github.com/reapchain/ibc-go/modules/core/02-client/types"
+	channelutils "github.com/reapchain/ibc-go/modules/core/04-channel/client/utils"
 )
 
 const (

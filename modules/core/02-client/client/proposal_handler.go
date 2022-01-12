@@ -7,7 +7,7 @@ import (
 	"github.com/reapchain/cosmos-sdk/types/rest"
 	govclient "github.com/reapchain/cosmos-sdk/x/gov/client"
 	govrest "github.com/reapchain/cosmos-sdk/x/gov/client/rest"
-	"github.com/cosmos/ibc-go/v2/modules/core/02-client/client/cli"
+	"github.com/reapchain/ibc-go/modules/core/02-client/client/cli"
 )
 
 var (

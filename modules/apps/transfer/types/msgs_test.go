@@ -8,7 +8,7 @@ import (
 
 	"github.com/reapchain/cosmos-sdk/crypto/keys/secp256k1"
 	sdk "github.com/reapchain/cosmos-sdk/types"
-	clienttypes "github.com/cosmos/ibc-go/v2/modules/core/02-client/types"
+	clienttypes "github.com/reapchain/ibc-go/modules/core/02-client/types"
 )
 
 // define constants used for testing

@@ -23,8 +23,8 @@ import (
 	tmtypes "github.com/reapchain/reapchain-core/types"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/cosmos/ibc-go/v2/modules/core/keeper"
-	"github.com/cosmos/ibc-go/v2/testing/simapp"
+	"github.com/reapchain/ibc-go/modules/core/keeper"
+	"github.com/reapchain/ibc-go/testing/simapp"
 )
 
 var DefaultTestingAppInit func() (TestingApp, map[string]json.RawMessage) = SetupTestingApp

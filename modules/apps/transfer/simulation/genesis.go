@@ -8,7 +8,7 @@ import (
 
 	"github.com/reapchain/cosmos-sdk/types/module"
 	simtypes "github.com/reapchain/cosmos-sdk/types/simulation"
-	"github.com/cosmos/ibc-go/v2/modules/apps/transfer/types"
+	"github.com/reapchain/ibc-go/modules/apps/transfer/types"
 )
 
 // Simulation parameter constants

@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/require"
 	abci "github.com/reapchain/reapchain-core/abci/types"
 
-	"github.com/cosmos/ibc-go/v2/modules/core/23-commitment/types"
+	"github.com/reapchain/ibc-go/modules/core/23-commitment/types"
 )
 
 func (suite *MerkleTestSuite) TestVerifyMembership() {

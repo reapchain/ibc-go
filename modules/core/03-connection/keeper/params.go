@@ -2,7 +2,7 @@ package keeper
 
 import (
 	sdk "github.com/reapchain/cosmos-sdk/types"
-	"github.com/cosmos/ibc-go/v2/modules/core/03-connection/types"
+	"github.com/reapchain/ibc-go/modules/core/03-connection/types"
 )
 
 // GetMaxExpectedTimePerBlock retrieves the maximum expected time per block from the paramstore

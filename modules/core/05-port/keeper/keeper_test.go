@@ -8,8 +8,8 @@ import (
 	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
 
 	sdk "github.com/reapchain/cosmos-sdk/types"
-	"github.com/cosmos/ibc-go/v2/modules/core/05-port/keeper"
-	"github.com/cosmos/ibc-go/v2/testing/simapp"
+	"github.com/reapchain/ibc-go/modules/core/05-port/keeper"
+	"github.com/reapchain/ibc-go/testing/simapp"
 )
 
 var (

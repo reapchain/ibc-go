@@ -12,11 +12,11 @@ import (
 	cryptotypes "github.com/reapchain/cosmos-sdk/crypto/types"
 	"github.com/reapchain/cosmos-sdk/crypto/types/multisig"
 	"github.com/reapchain/cosmos-sdk/types/tx/signing"
-	clienttypes "github.com/cosmos/ibc-go/v2/modules/core/02-client/types"
-	commitmenttypes "github.com/cosmos/ibc-go/v2/modules/core/23-commitment/types"
-	host "github.com/cosmos/ibc-go/v2/modules/core/24-host"
-	"github.com/cosmos/ibc-go/v2/modules/core/exported"
-	solomachinetypes "github.com/cosmos/ibc-go/v2/modules/light-clients/06-solomachine/types"
+	clienttypes "github.com/reapchain/ibc-go/modules/core/02-client/types"
+	commitmenttypes "github.com/reapchain/ibc-go/modules/core/23-commitment/types"
+	host "github.com/reapchain/ibc-go/modules/core/24-host"
+	"github.com/reapchain/ibc-go/modules/core/exported"
+	solomachinetypes "github.com/reapchain/ibc-go/modules/light-clients/06-solomachine/types"
 )
 
 // Solomachine is a testing helper used to simulate a counterparty

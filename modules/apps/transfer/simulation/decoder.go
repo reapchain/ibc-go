@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	"github.com/reapchain/cosmos-sdk/types/kv"
-	"github.com/cosmos/ibc-go/v2/modules/apps/transfer/types"
+	"github.com/reapchain/ibc-go/modules/apps/transfer/types"
 )
 
 // TransferUnmarshaler defines the expected encoding store functions.

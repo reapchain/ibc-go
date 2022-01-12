@@ -3,8 +3,8 @@ package types
 import (
 	sdk "github.com/reapchain/cosmos-sdk/types"
 	capabilitytypes "github.com/reapchain/cosmos-sdk/x/capability/types"
-	connectiontypes "github.com/cosmos/ibc-go/v2/modules/core/03-connection/types"
-	"github.com/cosmos/ibc-go/v2/modules/core/exported"
+	connectiontypes "github.com/reapchain/ibc-go/modules/core/03-connection/types"
+	"github.com/reapchain/ibc-go/modules/core/exported"
 )
 
 // ClientKeeper expected account IBC client keeper

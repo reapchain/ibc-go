@@ -10,7 +10,7 @@ import (
 	tmcrypto "github.com/reapchain/reapchain-core/proto/reapchain/crypto"
 
 	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
-	"github.com/cosmos/ibc-go/v2/modules/core/exported"
+	"github.com/reapchain/ibc-go/modules/core/exported"
 )
 
 // var representing the proofspecs for a SDK chain

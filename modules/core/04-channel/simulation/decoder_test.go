@@ -8,10 +8,10 @@ import (
 
 	sdk "github.com/reapchain/cosmos-sdk/types"
 	"github.com/reapchain/cosmos-sdk/types/kv"
-	"github.com/cosmos/ibc-go/v2/modules/core/04-channel/simulation"
-	"github.com/cosmos/ibc-go/v2/modules/core/04-channel/types"
-	host "github.com/cosmos/ibc-go/v2/modules/core/24-host"
-	"github.com/cosmos/ibc-go/v2/testing/simapp"
+	"github.com/reapchain/ibc-go/modules/core/04-channel/simulation"
+	"github.com/reapchain/ibc-go/modules/core/04-channel/types"
+	host "github.com/reapchain/ibc-go/modules/core/24-host"
+	"github.com/reapchain/ibc-go/testing/simapp"
 )
 
 func TestDecodeStore(t *testing.T) {

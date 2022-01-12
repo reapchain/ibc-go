@@ -2,7 +2,7 @@ package types
 
 import (
 	codectypes "github.com/reapchain/cosmos-sdk/codec/types"
-	"github.com/cosmos/ibc-go/v2/modules/core/exported"
+	"github.com/reapchain/ibc-go/modules/core/exported"
 )
 
 // RegisterInterfaces registers the reapchain concrete client-related

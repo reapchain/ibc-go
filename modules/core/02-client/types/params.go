@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	paramtypes "github.com/reapchain/cosmos-sdk/x/params/types"
-	"github.com/cosmos/ibc-go/v2/modules/core/exported"
+	"github.com/reapchain/ibc-go/modules/core/exported"
 )
 
 var (

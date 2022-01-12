@@ -8,9 +8,9 @@ import (
 	"github.com/reapchain/cosmos-sdk/client"
 	"github.com/reapchain/cosmos-sdk/client/flags"
 	"github.com/reapchain/cosmos-sdk/version"
-	"github.com/cosmos/ibc-go/v2/modules/core/03-connection/client/utils"
-	"github.com/cosmos/ibc-go/v2/modules/core/03-connection/types"
-	host "github.com/cosmos/ibc-go/v2/modules/core/24-host"
+	"github.com/reapchain/ibc-go/modules/core/03-connection/client/utils"
+	"github.com/reapchain/ibc-go/modules/core/03-connection/types"
+	host "github.com/reapchain/ibc-go/modules/core/24-host"
 )
 
 // GetCmdQueryConnections defines the command to query all the connection ends
