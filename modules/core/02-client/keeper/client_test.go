@@ -364,7 +364,7 @@ func (suite *KeeperTestSuite) TestUpgradeClient() {
 			expPass: false,
 		},
 		{
-			name: "tendermint client VerifyUpgrade fails",
+			name: "reapchain client VerifyUpgrade fails",
 			setup: func() {
 				// last Height is at next block
 				lastHeight = clienttypes.NewHeight(0, uint64(suite.chainB.GetContext().BlockHeight()+1))

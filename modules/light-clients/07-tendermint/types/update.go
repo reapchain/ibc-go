@@ -20,7 +20,7 @@ import (
 // create the consensus state for the header.Height
 // and update the client state if the header height is greater than the latest client state height
 // It returns an error if:
-// - the client or header provided are not parseable to tendermint types
+// - the client or header provided are not parseable to reapchain types
 // - the header is invalid
 // - header height is less than or equal to the trusted header height
 // - header revision is not equal to trusted header revision
@@ -146,7 +146,7 @@ func (cs ClientState) CheckHeaderAndUpdateState(
 func checkTrustedHeader(header *Header, consState *ConsensusState) error {
 	tmTrustedValidators, err := tmtypes.ValidatorSetFromProto(header.TrustedValidators)
 	if err != nil {
-		return sdkerrors.Wrap(err, "trusted validator set in not tendermint validator set type")
+		return sdkerrors.Wrap(err, "trusted validator set in not reapchain validator set type")
 	}
 
 	// assert that trustedVals is NextValidators of last trusted header
@@ -184,17 +184,17 @@ func checkValidity(
 
 	tmTrustedValidators, err := tmtypes.ValidatorSetFromProto(header.TrustedValidators)
 	if err != nil {
-		return sdkerrors.Wrap(err, "trusted validator set in not tendermint validator set type")
+		return sdkerrors.Wrap(err, "trusted validator set in not reapchain validator set type")
 	}
 
 	tmSignedHeader, err := tmtypes.SignedHeaderFromProto(header.SignedHeader)
 	if err != nil {
-		return sdkerrors.Wrap(err, "signed header in not tendermint signed header type")
+		return sdkerrors.Wrap(err, "signed header in not reapchain signed header type")
 	}
 
 	tmValidatorSet, err := tmtypes.ValidatorSetFromProto(header.ValidatorSet)
 	if err != nil {
-		return sdkerrors.Wrap(err, "validator set in not tendermint validator set type")
+		return sdkerrors.Wrap(err, "validator set in not reapchain validator set type")
 	}
 
 	// assert header height is newer than consensus state

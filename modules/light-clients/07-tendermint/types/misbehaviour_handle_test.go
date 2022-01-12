@@ -290,7 +290,7 @@ func (suite *TendermintTestSuite) TestCheckMisbehaviourAndUpdateState() {
 			false,
 		},
 		{
-			"invalid tendermint misbehaviour",
+			"invalid reapchain misbehaviour",
 			types.NewClientState(chainID, types.DefaultTrustLevel, trustingPeriod, ubdPeriod, maxClockDrift, height, commitmenttypes.GetSDKSpecs(), upgradePath, false, false),
 			types.NewConsensusState(suite.now, commitmenttypes.NewMerkleRoot(tmhash.Sum([]byte("app_hash"))), bothValsHash),
 			height,

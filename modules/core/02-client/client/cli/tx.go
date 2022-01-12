@@ -305,7 +305,7 @@ func NewCmdSubmitUpgradeProposal() *cobra.Command {
 			"The client state specified is the upgraded client state representing the upgraded chain\n" +
 			`Example Upgraded Client State JSON: 
 {
-	"@type":"/ibc.lightclients.tendermint.v1.ClientState",
+	"@type":"/ibc.lightclients.reapchain.v1.ClientState",
  	"chain_id":"testchain1",
 	"unbonding_period":"1814400s",
 	"latest_height":{"revision_number":"0","revision_height":"2"},

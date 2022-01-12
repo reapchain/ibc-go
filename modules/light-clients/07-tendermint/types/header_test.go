@@ -39,7 +39,7 @@ func (suite *TendermintTestSuite) TestHeaderValidateBasic() {
 		{"SignedHeaderFromProto failed", func() {
 			header.SignedHeader.Commit.Height = -1
 		}, false},
-		{"signed header failed tendermint ValidateBasic", func() {
+		{"signed header failed reapchain ValidateBasic", func() {
 			header = suite.chainA.LastHeader
 			header.SignedHeader.Commit = nil
 		}, false},

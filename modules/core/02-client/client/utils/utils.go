@@ -119,7 +119,7 @@ func QueryConsensusStateABCI(
 }
 
 // QueryTendermintHeader takes a client context and returns the appropriate
-// tendermint header
+// reapchain header
 func QueryTendermintHeader(clientCtx client.Context) (ibctmtypes.Header, int64, error) {
 	node, err := clientCtx.GetNode()
 	if err != nil {
@@ -166,7 +166,7 @@ func QueryTendermintHeader(clientCtx client.Context) (ibctmtypes.Header, int64, 
 }
 
 // QuerySelfConsensusState takes a client context and returns the appropriate
-// tendermint consensus state
+// reapchain consensus state
 func QuerySelfConsensusState(clientCtx client.Context) (*ibctmtypes.ConsensusState, int64, error) {
 	node, err := clientCtx.GetNode()
 	if err != nil {

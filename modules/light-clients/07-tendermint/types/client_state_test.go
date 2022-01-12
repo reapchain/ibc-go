@@ -93,7 +93,7 @@ func (suite *TendermintTestSuite) TestValidate() {
 			expPass:     false,
 		},
 		{
-			// NOTE: if this test fails, the code must account for the change in chainID length across tendermint versions!
+			// NOTE: if this test fails, the code must account for the change in chainID length across reapchain versions!
 			// Do not only fix the test, fix the code!
 			// https://github.com/cosmos/ibc-go/issues/177
 			name:        "valid chainID - chainID validation failed for chainID of length 50! ",
@@ -101,7 +101,7 @@ func (suite *TendermintTestSuite) TestValidate() {
 			expPass:     true,
 		},
 		{
-			// NOTE: if this test fails, the code must account for the change in chainID length across tendermint versions!
+			// NOTE: if this test fails, the code must account for the change in chainID length across reapchain versions!
 			// Do not only fix the test, fix the code!
 			// https://github.com/cosmos/ibc-go/issues/177
 			name:        "invalid chainID - chainID validation did not fail for chainID of length 51! ",

@@ -48,7 +48,7 @@ func (cs ClientState) GetChainID() string {
 	return cs.ChainId
 }
 
-// ClientType is tendermint.
+// ClientType is reapchain.
 func (cs ClientState) ClientType() string {
 	return exported.Tendermint
 }
@@ -58,7 +58,7 @@ func (cs ClientState) GetLatestHeight() exported.Height {
 	return cs.LatestHeight
 }
 
-// Status returns the status of the tendermint client.
+// Status returns the status of the reapchain client.
 // The client may be:
 // - Active: FrozenHeight is zero and client is not expired
 // - Frozen: Frozen Height is not zero
@@ -103,8 +103,8 @@ func (cs ClientState) Validate() error {
 
 	// NOTE: the value of tmtypes.MaxChainIDLen may change in the future.
 	// If this occurs, the code here must account for potential difference
-	// between the tendermint version being run by the counterparty chain
-	// and the tendermint version used by this light client.
+	// between the reapchain version being run by the counterparty chain
+	// and the reapchain version used by this light client.
 	// https://github.com/cosmos/ibc-go/issues/177
 	if len(cs.ChainId) > tmtypes.MaxChainIDLen {
 		return sdkerrors.Wrapf(ErrInvalidChainID, "chainID is too long; got: %d, max: %d", len(cs.ChainId), tmtypes.MaxChainIDLen)
@@ -129,7 +129,7 @@ func (cs ClientState) Validate() error {
 			"latest height revision number must match chain id revision number (%d != %d)", cs.LatestHeight.RevisionNumber, clienttypes.ParseChainID(cs.ChainId))
 	}
 	if cs.LatestHeight.RevisionHeight == 0 {
-		return sdkerrors.Wrapf(ErrInvalidHeaderHeight, "tendermint client's latest height revision height cannot be zero")
+		return sdkerrors.Wrapf(ErrInvalidHeaderHeight, "reapchain client's latest height revision height cannot be zero")
 	}
 	if cs.TrustingPeriod >= cs.UnbondingPeriod {
 		return sdkerrors.Wrapf(

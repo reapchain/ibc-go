@@ -104,12 +104,12 @@ func checkMisbehaviourHeader(
 
 	tmTrustedValset, err := tmtypes.ValidatorSetFromProto(header.TrustedValidators)
 	if err != nil {
-		return sdkerrors.Wrap(err, "trusted validator set is not tendermint validator set type")
+		return sdkerrors.Wrap(err, "trusted validator set is not reapchain validator set type")
 	}
 
 	tmCommit, err := tmtypes.CommitFromProto(header.Commit)
 	if err != nil {
-		return sdkerrors.Wrap(err, "commit is not tendermint commit type")
+		return sdkerrors.Wrap(err, "commit is not reapchain commit type")
 	}
 
 	// check the trusted fields for the header against ConsensusState

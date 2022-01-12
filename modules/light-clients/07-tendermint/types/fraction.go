@@ -5,7 +5,7 @@ import (
 	"github.com/reapchain/reapchain-core/light"
 )
 
-// DefaultTrustLevel is the tendermint light client default trust level
+// DefaultTrustLevel is the reapchain light client default trust level
 var DefaultTrustLevel = NewFractionFromTm(light.DefaultTrustLevel)
 
 // NewFractionFromTm returns a new Fraction instance from a tmmath.Fraction

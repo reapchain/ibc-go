@@ -29,7 +29,7 @@ func (suite *TypesTestSuite) TestPackClientState() {
 			true,
 		},
 		{
-			"tendermint client",
+			"reapchain client",
 			ibctmtypes.NewClientState(chainID, ibctesting.DefaultTrustLevel, ibctesting.TrustingPeriod, ibctesting.UnbondingPeriod, ibctesting.MaxClockDrift, clientHeight, commitmenttypes.GetSDKSpecs(), ibctesting.UpgradePath, false, false),
 			true,
 		},
@@ -81,7 +81,7 @@ func (suite *TypesTestSuite) TestPackConsensusState() {
 			true,
 		},
 		{
-			"tendermint consensus",
+			"reapchain consensus",
 			suite.chainA.LastHeader.ConsensusState(),
 			true,
 		},
@@ -127,7 +127,7 @@ func (suite *TypesTestSuite) TestPackHeader() {
 			true,
 		},
 		{
-			"tendermint header",
+			"reapchain header",
 			suite.chainA.LastHeader,
 			true,
 		},
@@ -174,8 +174,8 @@ func (suite *TypesTestSuite) TestPackMisbehaviour() {
 			true,
 		},
 		{
-			"tendermint misbehaviour",
-			ibctmtypes.NewMisbehaviour("tendermint", suite.chainA.LastHeader, suite.chainA.LastHeader),
+			"reapchain misbehaviour",
+			ibctmtypes.NewMisbehaviour("reapchain", suite.chainA.LastHeader, suite.chainA.LastHeader),
 			true,
 		},
 		{

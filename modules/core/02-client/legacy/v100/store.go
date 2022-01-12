@@ -23,8 +23,8 @@ import (
 //
 // - Migrating solo machine client states from v1 to v2 protobuf definition
 // - Pruning all solo machine consensus states
-// - Pruning expired tendermint consensus states
-// - Adds ProcessedHeight and Iteration keys for unexpired tendermint consensus states
+// - Pruning expired reapchain consensus states
+// - Adds ProcessedHeight and Iteration keys for unexpired reapchain consensus states
 func MigrateStore(ctx sdk.Context, storeKey sdk.StoreKey, cdc codec.BinaryCodec) (err error) {
 	store := ctx.KVStore(storeKey)
 	iterator := sdk.KVStorePrefixIterator(store, host.KeyClientStorePrefix)
@@ -85,12 +85,12 @@ func MigrateStore(ctx sdk.Context, storeKey sdk.StoreKey, cdc codec.BinaryCodec)
 		case exported.Tendermint:
 			var clientState exported.ClientState
 			if err := cdc.UnmarshalInterface(bz, &clientState); err != nil {
-				return sdkerrors.Wrap(err, "failed to unmarshal client state bytes into tendermint client state")
+				return sdkerrors.Wrap(err, "failed to unmarshal client state bytes into reapchain client state")
 			}
 
 			tmClientState, ok := clientState.(*ibctmtypes.ClientState)
 			if !ok {
-				return sdkerrors.Wrap(types.ErrInvalidClient, "client state is not tendermint even though client id contains 07-tendermint")
+				return sdkerrors.Wrap(types.ErrInvalidClient, "client state is not reapchain even though client id contains 07-tendermint")
 			}
 
 			// add iteration keys so pruning will be successful
@@ -151,7 +151,7 @@ func pruneSolomachineConsensusStates(clientStore sdk.KVStore) {
 	}
 }
 
-// addConsensusMetadata adds the iteration key and processed height for all tendermint consensus states
+// addConsensusMetadata adds the iteration key and processed height for all reapchain consensus states
 // These keys were not included in the previous release of the IBC module. Adding the iteration keys allows
 // for pruning iteration.
 func addConsensusMetadata(ctx sdk.Context, clientStore sdk.KVStore, cdc codec.BinaryCodec, clientState *ibctmtypes.ClientState) error {

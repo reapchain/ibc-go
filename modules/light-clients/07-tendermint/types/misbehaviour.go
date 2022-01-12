@@ -117,11 +117,11 @@ func (misbehaviour Misbehaviour) ValidateBasic() error {
 func validCommit(chainID string, blockID tmtypes.BlockID, commit *tmproto.Commit, valSet *tmproto.ValidatorSet) (err error) {
 	tmCommit, err := tmtypes.CommitFromProto(commit)
 	if err != nil {
-		return sdkerrors.Wrap(err, "commit is not tendermint commit type")
+		return sdkerrors.Wrap(err, "commit is not reapchain commit type")
 	}
 	tmValset, err := tmtypes.ValidatorSetFromProto(valSet)
 	if err != nil {
-		return sdkerrors.Wrap(err, "validator set is not tendermint validator set type")
+		return sdkerrors.Wrap(err, "validator set is not reapchain validator set type")
 	}
 
 	if err := tmValset.VerifyCommitLight(chainID, blockID, tmCommit.Height, tmCommit); err != nil {

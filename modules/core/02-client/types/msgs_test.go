@@ -54,7 +54,7 @@ func (suite *TypesTestSuite) TestMarshalMsgCreateClient() {
 			},
 		},
 		{
-			"tendermint client", func() {
+			"reapchain client", func() {
 				tendermintClient := ibctmtypes.NewClientState(suite.chainA.ChainID, ibctesting.DefaultTrustLevel, ibctesting.TrustingPeriod, ibctesting.UnbondingPeriod, ibctesting.MaxClockDrift, clientHeight, commitmenttypes.GetSDKSpecs(), ibctesting.UpgradePath, false, false)
 				msg, err = types.NewMsgCreateClient(tendermintClient, suite.chainA.CurrentTMClientHeader().ConsensusState(), suite.chainA.SenderAccount.GetAddress().String())
 				suite.Require().NoError(err)
@@ -98,7 +98,7 @@ func (suite *TypesTestSuite) TestMsgCreateClient_ValidateBasic() {
 		expPass  bool
 	}{
 		{
-			"valid - tendermint client",
+			"valid - reapchain client",
 			func() {
 				tendermintClient := ibctmtypes.NewClientState(suite.chainA.ChainID, ibctesting.DefaultTrustLevel, ibctesting.TrustingPeriod, ibctesting.UnbondingPeriod, ibctesting.MaxClockDrift, clientHeight, commitmenttypes.GetSDKSpecs(), ibctesting.UpgradePath, false, false)
 				msg, err = types.NewMsgCreateClient(tendermintClient, suite.chainA.CurrentTMClientHeader().ConsensusState(), suite.chainA.SenderAccount.GetAddress().String())
@@ -107,7 +107,7 @@ func (suite *TypesTestSuite) TestMsgCreateClient_ValidateBasic() {
 			true,
 		},
 		{
-			"invalid tendermint client",
+			"invalid reapchain client",
 			func() {
 				msg, err = types.NewMsgCreateClient(&ibctmtypes.ClientState{}, suite.chainA.CurrentTMClientHeader().ConsensusState(), suite.chainA.SenderAccount.GetAddress().String())
 				suite.Require().NoError(err)
@@ -208,8 +208,8 @@ func (suite *TypesTestSuite) TestMarshalMsgUpdateClient() {
 			},
 		},
 		{
-			"tendermint client", func() {
-				msg, err = types.NewMsgUpdateClient("tendermint", suite.chainA.CurrentTMClientHeader(), suite.chainA.SenderAccount.GetAddress().String())
+			"reapchain client", func() {
+				msg, err = types.NewMsgUpdateClient("reapchain", suite.chainA.CurrentTMClientHeader(), suite.chainA.SenderAccount.GetAddress().String())
 				suite.Require().NoError(err)
 
 			},
@@ -259,17 +259,17 @@ func (suite *TypesTestSuite) TestMsgUpdateClient_ValidateBasic() {
 			false,
 		},
 		{
-			"valid - tendermint header",
+			"valid - reapchain header",
 			func() {
-				msg, err = types.NewMsgUpdateClient("tendermint", suite.chainA.CurrentTMClientHeader(), suite.chainA.SenderAccount.GetAddress().String())
+				msg, err = types.NewMsgUpdateClient("reapchain", suite.chainA.CurrentTMClientHeader(), suite.chainA.SenderAccount.GetAddress().String())
 				suite.Require().NoError(err)
 			},
 			true,
 		},
 		{
-			"invalid tendermint header",
+			"invalid reapchain header",
 			func() {
-				msg, err = types.NewMsgUpdateClient("tendermint", &ibctmtypes.Header{}, suite.chainA.SenderAccount.GetAddress().String())
+				msg, err = types.NewMsgUpdateClient("reapchain", &ibctmtypes.Header{}, suite.chainA.SenderAccount.GetAddress().String())
 				suite.Require().NoError(err)
 			},
 			false,
@@ -337,7 +337,7 @@ func (suite *TypesTestSuite) TestMarshalMsgUpgradeClient() {
 		malleate func()
 	}{
 		{
-			"client upgrades to new tendermint client",
+			"client upgrades to new reapchain client",
 			func() {
 				tendermintClient := ibctmtypes.NewClientState(suite.chainA.ChainID, ibctesting.DefaultTrustLevel, ibctesting.TrustingPeriod, ibctesting.UnbondingPeriod, ibctesting.MaxClockDrift, clientHeight, commitmenttypes.GetSDKSpecs(), ibctesting.UpgradePath, false, false)
 				tendermintConsState := &ibctmtypes.ConsensusState{NextValidatorsHash: []byte("nextValsHash")}
@@ -487,14 +487,14 @@ func (suite *TypesTestSuite) TestMarshalMsgSubmitMisbehaviour() {
 			},
 		},
 		{
-			"tendermint client", func() {
+			"reapchain client", func() {
 				height := types.NewHeight(0, uint64(suite.chainA.CurrentHeader.Height))
 				heightMinus1 := types.NewHeight(0, uint64(suite.chainA.CurrentHeader.Height)-1)
 				header1 := suite.chainA.CreateTMClientHeader(suite.chainA.ChainID, int64(height.RevisionHeight), heightMinus1, suite.chainA.CurrentHeader.Time, suite.chainA.Vals, suite.chainA.Vals, suite.chainA.Signers)
 				header2 := suite.chainA.CreateTMClientHeader(suite.chainA.ChainID, int64(height.RevisionHeight), heightMinus1, suite.chainA.CurrentHeader.Time.Add(time.Minute), suite.chainA.Vals, suite.chainA.Vals, suite.chainA.Signers)
 
-				misbehaviour := ibctmtypes.NewMisbehaviour("tendermint", header1, header2)
-				msg, err = types.NewMsgSubmitMisbehaviour("tendermint", misbehaviour, suite.chainA.SenderAccount.GetAddress().String())
+				misbehaviour := ibctmtypes.NewMisbehaviour("reapchain", header1, header2)
+				msg, err = types.NewMsgSubmitMisbehaviour("reapchain", misbehaviour, suite.chainA.SenderAccount.GetAddress().String())
 				suite.Require().NoError(err)
 
 			},
@@ -544,23 +544,23 @@ func (suite *TypesTestSuite) TestMsgSubmitMisbehaviour_ValidateBasic() {
 			false,
 		},
 		{
-			"valid - tendermint misbehaviour",
+			"valid - reapchain misbehaviour",
 			func() {
 				height := types.NewHeight(0, uint64(suite.chainA.CurrentHeader.Height))
 				heightMinus1 := types.NewHeight(0, uint64(suite.chainA.CurrentHeader.Height)-1)
 				header1 := suite.chainA.CreateTMClientHeader(suite.chainA.ChainID, int64(height.RevisionHeight), heightMinus1, suite.chainA.CurrentHeader.Time, suite.chainA.Vals, suite.chainA.Vals, suite.chainA.Signers)
 				header2 := suite.chainA.CreateTMClientHeader(suite.chainA.ChainID, int64(height.RevisionHeight), heightMinus1, suite.chainA.CurrentHeader.Time.Add(time.Minute), suite.chainA.Vals, suite.chainA.Vals, suite.chainA.Signers)
 
-				misbehaviour := ibctmtypes.NewMisbehaviour("tendermint", header1, header2)
-				msg, err = types.NewMsgSubmitMisbehaviour("tendermint", misbehaviour, suite.chainA.SenderAccount.GetAddress().String())
+				misbehaviour := ibctmtypes.NewMisbehaviour("reapchain", header1, header2)
+				msg, err = types.NewMsgSubmitMisbehaviour("reapchain", misbehaviour, suite.chainA.SenderAccount.GetAddress().String())
 				suite.Require().NoError(err)
 			},
 			true,
 		},
 		{
-			"invalid tendermint misbehaviour",
+			"invalid reapchain misbehaviour",
 			func() {
-				msg, err = types.NewMsgSubmitMisbehaviour("tendermint", &ibctmtypes.Misbehaviour{}, suite.chainA.SenderAccount.GetAddress().String())
+				msg, err = types.NewMsgSubmitMisbehaviour("reapchain", &ibctmtypes.Misbehaviour{}, suite.chainA.SenderAccount.GetAddress().String())
 				suite.Require().NoError(err)
 			},
 			false,
