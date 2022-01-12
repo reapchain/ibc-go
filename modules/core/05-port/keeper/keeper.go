@@ -5,9 +5,9 @@ import (
 
 	"github.com/reapchain/reapchain-core/libs/log"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	capabilitykeeper "github.com/cosmos/cosmos-sdk/x/capability/keeper"
-	capabilitytypes "github.com/cosmos/cosmos-sdk/x/capability/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	capabilitykeeper "github.com/reapchain/cosmos-sdk/x/capability/keeper"
+	capabilitytypes "github.com/reapchain/cosmos-sdk/x/capability/types"
 	"github.com/cosmos/ibc-go/v2/modules/core/05-port/types"
 	host "github.com/cosmos/ibc-go/v2/modules/core/24-host"
 )

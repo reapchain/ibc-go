@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/suite"
 	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
 	"github.com/cosmos/ibc-go/v2/modules/core/05-port/keeper"
 	"github.com/cosmos/ibc-go/v2/testing/simapp"
 )

@@ -3,7 +3,7 @@ package keeper_test
 import (
 	"fmt"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
 
 	channeltypes "github.com/cosmos/ibc-go/v2/modules/core/04-channel/types"
 	"github.com/cosmos/ibc-go/v2/modules/core/05-port/types"

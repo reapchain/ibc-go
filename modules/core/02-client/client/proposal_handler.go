@@ -3,10 +3,10 @@ package client
 import (
 	"net/http"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/types/rest"
-	govclient "github.com/cosmos/cosmos-sdk/x/gov/client"
-	govrest "github.com/cosmos/cosmos-sdk/x/gov/client/rest"
+	"github.com/reapchain/cosmos-sdk/client"
+	"github.com/reapchain/cosmos-sdk/types/rest"
+	govclient "github.com/reapchain/cosmos-sdk/x/gov/client"
+	govrest "github.com/reapchain/cosmos-sdk/x/gov/client/rest"
 	"github.com/cosmos/ibc-go/v2/modules/core/02-client/client/cli"
 )
 

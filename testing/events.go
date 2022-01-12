@@ -3,7 +3,7 @@ package ibctesting
 import (
 	"fmt"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
 	clienttypes "github.com/cosmos/ibc-go/v2/modules/core/02-client/types"
 	connectiontypes "github.com/cosmos/ibc-go/v2/modules/core/03-connection/types"
 	channeltypes "github.com/cosmos/ibc-go/v2/modules/core/04-channel/types"

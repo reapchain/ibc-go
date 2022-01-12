@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/kv"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	"github.com/reapchain/cosmos-sdk/types/kv"
 	"github.com/cosmos/ibc-go/v2/modules/core/04-channel/simulation"
 	"github.com/cosmos/ibc-go/v2/modules/core/04-channel/types"
 	host "github.com/cosmos/ibc-go/v2/modules/core/24-host"

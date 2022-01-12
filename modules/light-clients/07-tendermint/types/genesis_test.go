@@ -1,7 +1,7 @@
 package types_test
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
 
 	clienttypes "github.com/cosmos/ibc-go/v2/modules/core/02-client/types"
 	"github.com/cosmos/ibc-go/v2/modules/light-clients/07-tendermint/types"

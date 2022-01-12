@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
-	"github.com/cosmos/cosmos-sdk/x/genutil/client/cli"
+	svrcmd "github.com/reapchain/cosmos-sdk/server/cmd"
+	"github.com/reapchain/cosmos-sdk/x/genutil/client/cli"
 	"github.com/cosmos/ibc-go/v2/testing/simapp"
 	"github.com/cosmos/ibc-go/v2/testing/simapp/simd/cmd"
 )

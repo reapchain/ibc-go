@@ -3,11 +3,11 @@ package types
 import (
 	proto "github.com/gogo/protobuf/proto"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/msgservice"
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
+	codectypes "github.com/reapchain/cosmos-sdk/codec/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
+	"github.com/reapchain/cosmos-sdk/types/msgservice"
+	govtypes "github.com/reapchain/cosmos-sdk/x/gov/types"
 	"github.com/cosmos/ibc-go/v2/modules/core/exported"
 )
 

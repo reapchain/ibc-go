@@ -7,8 +7,8 @@ import (
 
 	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
 
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/simulation"
+	simtypes "github.com/reapchain/cosmos-sdk/types/simulation"
+	"github.com/reapchain/cosmos-sdk/x/simulation"
 )
 
 // Profile with:

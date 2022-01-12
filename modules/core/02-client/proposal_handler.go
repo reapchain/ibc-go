@@ -1,9 +1,9 @@
 package client
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
+	govtypes "github.com/reapchain/cosmos-sdk/x/gov/types"
 	"github.com/cosmos/ibc-go/v2/modules/core/02-client/keeper"
 	"github.com/cosmos/ibc-go/v2/modules/core/02-client/types"
 )

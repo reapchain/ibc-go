@@ -9,8 +9,8 @@ import (
 	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
 	tmtypes "github.com/reapchain/reapchain-core/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/reapchain/cosmos-sdk/codec"
+	sdk "github.com/reapchain/cosmos-sdk/types"
 	clienttypes "github.com/cosmos/ibc-go/v2/modules/core/02-client/types"
 	ibctmtypes "github.com/cosmos/ibc-go/v2/modules/light-clients/07-tendermint/types"
 	ibctesting "github.com/cosmos/ibc-go/v2/testing"

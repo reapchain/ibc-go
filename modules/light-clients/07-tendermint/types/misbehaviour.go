@@ -6,7 +6,7 @@ import (
 	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
 	tmtypes "github.com/reapchain/reapchain-core/types"
 
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
 	clienttypes "github.com/cosmos/ibc-go/v2/modules/core/02-client/types"
 	host "github.com/cosmos/ibc-go/v2/modules/core/24-host"
 	"github.com/cosmos/ibc-go/v2/modules/core/exported"

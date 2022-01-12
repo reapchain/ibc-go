@@ -7,14 +7,14 @@ import (
 	"math"
 	"math/rand"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	capabilitytypes "github.com/cosmos/cosmos-sdk/x/capability/types"
+	"github.com/reapchain/cosmos-sdk/client"
+	"github.com/reapchain/cosmos-sdk/codec"
+	codectypes "github.com/reapchain/cosmos-sdk/codec/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
+	"github.com/reapchain/cosmos-sdk/types/module"
+	simtypes "github.com/reapchain/cosmos-sdk/types/simulation"
+	capabilitytypes "github.com/reapchain/cosmos-sdk/x/capability/types"
 	"github.com/gorilla/mux"
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
 	"github.com/spf13/cobra"
@@ -195,7 +195,7 @@ func ValidateTransferChannelParams(
 	version string,
 ) error {
 	// NOTE: for escrow address security only 2^32 channels are allowed to be created
-	// Issue: https://github.com/cosmos/cosmos-sdk/issues/7737
+	// Issue: https://github.com/reapchain/cosmos-sdk/issues/7737
 	channelSequence, err := channeltypes.ParseChannelSequence(channelID)
 	if err != nil {
 		return err

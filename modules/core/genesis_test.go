@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/suite"
 	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
+	"github.com/reapchain/cosmos-sdk/codec"
 	ibc "github.com/cosmos/ibc-go/v2/modules/core"
 	clienttypes "github.com/cosmos/ibc-go/v2/modules/core/02-client/types"
 	connectiontypes "github.com/cosmos/ibc-go/v2/modules/core/03-connection/types"

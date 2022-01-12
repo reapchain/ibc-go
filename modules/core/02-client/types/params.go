@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
+	paramtypes "github.com/reapchain/cosmos-sdk/x/params/types"
 	"github.com/cosmos/ibc-go/v2/modules/core/exported"
 )
 

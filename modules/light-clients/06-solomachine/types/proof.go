@@ -1,11 +1,11 @@
 package types
 
 import (
-	"github.com/cosmos/cosmos-sdk/codec"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/crypto/types/multisig"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
+	"github.com/reapchain/cosmos-sdk/codec"
+	cryptotypes "github.com/reapchain/cosmos-sdk/crypto/types"
+	"github.com/reapchain/cosmos-sdk/crypto/types/multisig"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
+	"github.com/reapchain/cosmos-sdk/types/tx/signing"
 	clienttypes "github.com/cosmos/ibc-go/v2/modules/core/02-client/types"
 	connectiontypes "github.com/cosmos/ibc-go/v2/modules/core/03-connection/types"
 	channeltypes "github.com/cosmos/ibc-go/v2/modules/core/04-channel/types"

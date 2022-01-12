@@ -3,10 +3,10 @@ package types_test
 import (
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
-	upgradetypes "github.com/cosmos/cosmos-sdk/x/upgrade/types"
+	"github.com/reapchain/cosmos-sdk/codec"
+	codectypes "github.com/reapchain/cosmos-sdk/codec/types"
+	govtypes "github.com/reapchain/cosmos-sdk/x/gov/types"
+	upgradetypes "github.com/reapchain/cosmos-sdk/x/upgrade/types"
 
 	"github.com/cosmos/ibc-go/v2/modules/core/02-client/types"
 	ibctmtypes "github.com/cosmos/ibc-go/v2/modules/light-clients/07-tendermint/types"

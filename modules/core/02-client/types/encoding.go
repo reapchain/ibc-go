@@ -3,7 +3,7 @@ package types
 import (
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/codec"
+	"github.com/reapchain/cosmos-sdk/codec"
 	"github.com/cosmos/ibc-go/v2/modules/core/exported"
 )
 

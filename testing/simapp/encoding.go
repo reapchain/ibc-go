@@ -1,7 +1,7 @@
 package simapp
 
 import (
-	"github.com/cosmos/cosmos-sdk/std"
+	"github.com/reapchain/cosmos-sdk/std"
 	simappparams "github.com/cosmos/ibc-go/v2/testing/simapp/params"
 )
 

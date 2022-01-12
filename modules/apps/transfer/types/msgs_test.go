@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/reapchain/cosmos-sdk/crypto/keys/secp256k1"
+	sdk "github.com/reapchain/cosmos-sdk/types"
 	clienttypes "github.com/cosmos/ibc-go/v2/modules/core/02-client/types"
 )
 

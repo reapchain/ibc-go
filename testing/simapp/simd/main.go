@@ -3,8 +3,8 @@ package main
 import (
 	"os"
 
-	"github.com/cosmos/cosmos-sdk/server"
-	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
+	"github.com/reapchain/cosmos-sdk/server"
+	svrcmd "github.com/reapchain/cosmos-sdk/server/cmd"
 	"github.com/cosmos/ibc-go/v2/testing/simapp"
 	"github.com/cosmos/ibc-go/v2/testing/simapp/simd/cmd"
 )

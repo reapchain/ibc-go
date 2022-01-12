@@ -7,7 +7,7 @@ import (
 	abci "github.com/reapchain/reapchain-core/abci/types"
 	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
 
-	upgradetypes "github.com/cosmos/cosmos-sdk/x/upgrade/types"
+	upgradetypes "github.com/reapchain/cosmos-sdk/x/upgrade/types"
 	client "github.com/cosmos/ibc-go/v2/modules/core/02-client"
 	"github.com/cosmos/ibc-go/v2/modules/core/02-client/types"
 	"github.com/cosmos/ibc-go/v2/modules/core/exported"

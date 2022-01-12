@@ -61,12 +61,12 @@ must use for committing IBC messages is defined in
 [ICS-24](https://github.com/cosmos/ics/tree/master/spec/core/ics-024-host-requirements) and the proof
 format that all implementations must be able to produce and verify is defined in this [ICS-23 implementation](https://github.com/confio/ics23).
 
-### [Capabilities](https://github.com/cosmos/cosmos-sdk/blob/master/docs/core/ocap.md)
+### [Capabilities](https://github.com/reapchain/cosmos-sdk/blob/master/docs/core/ocap.md)
 
 IBC is intended to work in execution environements where modules do not necessarily trust each
 other. Thus IBC must authenticate module actions on ports and channels so that only modules with the
 appropriate permissions can use them. This is accomplished using [dynamic
-capabilities](https://github.com/cosmos/cosmos-sdk/blob/master/docs/architecture/adr-003-dynamic-capability-store.md). Upon binding to a port or
+capabilities](https://github.com/reapchain/cosmos-sdk/blob/master/docs/architecture/adr-003-dynamic-capability-store.md). Upon binding to a port or
 creating a channel for a module, IBC will return a dynamic capability that the module must claim in
 order to use that port or channel. This prevents other modules from using that port or channel since
 they will not own the appropriate capability.

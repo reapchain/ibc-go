@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
 
 	v100 "github.com/cosmos/ibc-go/v2/modules/core/02-client/legacy/v100"
 )

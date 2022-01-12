@@ -3,10 +3,10 @@ package keeper
 import (
 	"github.com/reapchain/reapchain-core/libs/log"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
+	"github.com/reapchain/cosmos-sdk/codec"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
+	paramtypes "github.com/reapchain/cosmos-sdk/x/params/types"
 	clienttypes "github.com/cosmos/ibc-go/v2/modules/core/02-client/types"
 	"github.com/cosmos/ibc-go/v2/modules/core/03-connection/types"
 	commitmenttypes "github.com/cosmos/ibc-go/v2/modules/core/23-commitment/types"

@@ -9,7 +9,7 @@ import (
 	"github.com/gogo/protobuf/proto"
 	tmcrypto "github.com/reapchain/reapchain-core/proto/reapchain/crypto"
 
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
 	"github.com/cosmos/ibc-go/v2/modules/core/exported"
 )
 

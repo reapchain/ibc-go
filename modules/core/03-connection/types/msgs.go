@@ -1,9 +1,9 @@
 package types
 
 import (
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	codectypes "github.com/reapchain/cosmos-sdk/codec/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
 	clienttypes "github.com/cosmos/ibc-go/v2/modules/core/02-client/types"
 	commitmenttypes "github.com/cosmos/ibc-go/v2/modules/core/23-commitment/types"
 	host "github.com/cosmos/ibc-go/v2/modules/core/24-host"

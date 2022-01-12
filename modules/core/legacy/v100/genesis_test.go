@@ -3,9 +3,9 @@ package v100_test
 import (
 	"testing"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	genutiltypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
+	"github.com/reapchain/cosmos-sdk/client"
+	codectypes "github.com/reapchain/cosmos-sdk/codec/types"
+	genutiltypes "github.com/reapchain/cosmos-sdk/x/genutil/types"
 	"github.com/stretchr/testify/suite"
 	tmtypes "github.com/reapchain/reapchain-core/types"
 

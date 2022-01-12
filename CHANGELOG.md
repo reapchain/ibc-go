@@ -106,7 +106,7 @@ Ref: https://keepachangelog.com/en/1.0.0/
 
 ### Dependencies
 
-* [\#367](https://github.com/cosmos/ibc-go/pull/367) Bump [cosmos-sdk](https://github.com/cosmos/cosmos-sdk) from 0.43 to 0.44.
+* [\#367](https://github.com/cosmos/ibc-go/pull/367) Bump [cosmos-sdk](https://github.com/reapchain/cosmos-sdk) from 0.43 to 0.44.
 
 ## [v1.0.1](https://github.com/cosmos/ibc-go/releases/tag/v1.0.1) - 2021-08-25
 
@@ -151,8 +151,8 @@ Ref: https://keepachangelog.com/en/1.0.0/
 * (modules/light-clients/07-tendermint) [\#99](https://github.com/cosmos/ibc-go/pull/99) Enforce maximum chain-id length for tendermint client. 
 * (modules/light-clients/07-tendermint) [\#141](https://github.com/cosmos/ibc-go/pull/141) Allow a new form of misbehaviour that proves counterparty chain breaks time monotonicity, automatically enforce monotonicity in UpdateClient and freeze client if monotonicity is broken.
 * (modules/light-clients/07-tendermint) [\#141](https://github.com/cosmos/ibc-go/pull/141) Freeze the client if there's a conflicting header submitted for an existing consensus state.
-* (modules/core/02-client) [\#8405](https://github.com/cosmos/cosmos-sdk/pull/8405) Refactor IBC client update governance proposals to use a substitute client to update a frozen or expired client.
-* (modules/core/02-client) [\#8673](https://github.com/cosmos/cosmos-sdk/pull/8673) IBC upgrade logic moved to 02-client and an IBC UpgradeProposal is added.
+* (modules/core/02-client) [\#8405](https://github.com/reapchain/cosmos-sdk/pull/8405) Refactor IBC client update governance proposals to use a substitute client to update a frozen or expired client.
+* (modules/core/02-client) [\#8673](https://github.com/reapchain/cosmos-sdk/pull/8673) IBC upgrade logic moved to 02-client and an IBC UpgradeProposal is added.
 * (modules/core/03-connection) [\#171](https://github.com/cosmos/ibc-go/pull/171) Introduces a new parameter `MaxExpectedTimePerBlock` to allow connections to calculate and enforce a block delay that is proportional to time delay set by connection.
 * (core) [\#268](https://github.com/cosmos/ibc-go/pull/268) Perform a no-op on redundant relay messages. Previous behaviour returned an error. Now no state change will occur and no error will be returned.
 
@@ -162,7 +162,7 @@ Ref: https://keepachangelog.com/en/1.0.0/
 * (core/02-client) [\#205](https://github.com/cosmos/ibc-go/pull/205) Add in-place and genesis migrations from SDK v0.42.0 to ibc-go v1.0.0. Solo machine protobuf defintions are migrated from v1 to v2. All solo machine consensus states are pruned. All expired tendermint consensus states are pruned.
 * (modules/core) [\#184](https://github.com/cosmos/ibc-go/pull/184) Improve error messages. Uses unique error codes to indicate already relayed packets.
 * (07-tendermint) [\#182](https://github.com/cosmos/ibc-go/pull/182) Remove duplicate checks in upgrade logic.
-* (modules/core/04-channel) [\#7949](https://github.com/cosmos/cosmos-sdk/issues/7949) Standardized channel `Acknowledgement` moved to its own file. Codec registration redundancy removed.
+* (modules/core/04-channel) [\#7949](https://github.com/reapchain/cosmos-sdk/issues/7949) Standardized channel `Acknowledgement` moved to its own file. Codec registration redundancy removed.
 * (modules/core/04-channel) [\#144](https://github.com/cosmos/ibc-go/pull/144) Introduced a `packet_data_hex` attribute to emit the hex-encoded packet data in events. This allows for raw binary (proto-encoded message) to be sent over events and decoded correctly on relayer. Original `packet_data` is DEPRECATED. All relayers and IBC event consumers are encouraged to switch to `packet_data_hex` as soon as possible.
 * (core/04-channel) [\#197](https://github.com/cosmos/ibc-go/pull/197) Introduced a `packet_ack_hex` attribute to emit the hex-encoded acknowledgement in events. This allows for raw binary (proto-encoded message) to be sent over events and decoded correctly on relayer. Original `packet_ack` is DEPRECATED. All relayers and IBC event consumers are encouraged to switch to `packet_ack_hex` as soon as possible.
 * (modules/light-clients/07-tendermint) [\#125](https://github.com/cosmos/ibc-go/pull/125) Implement efficient iteration of consensus states and pruning of earliest expired consensus state on UpdateClient.
@@ -179,12 +179,12 @@ Ref: https://keepachangelog.com/en/1.0.0/
 
 ## IBC in the Cosmos SDK Repository
 
-The IBC module was originally released in [v0.40.0](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.40.0) of the SDK.
-Please see the [Release Notes](https://github.com/cosmos/cosmos-sdk/blob/v0.40.0/RELEASE_NOTES.md).
+The IBC module was originally released in [v0.40.0](https://github.com/reapchain/cosmos-sdk/releases/tag/v0.40.0) of the SDK.
+Please see the [Release Notes](https://github.com/reapchain/cosmos-sdk/blob/v0.40.0/RELEASE_NOTES.md).
 
-The IBC module is also contained in the releases for [v0.41.x](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.41.0) and [v0.42.x](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.42.0).
-Please see the Release Notes for [v0.41.x](https://github.com/cosmos/cosmos-sdk/blob/v0.41.0/RELEASE_NOTES.md) and [v0.42.x](https://github.com/cosmos/cosmos-sdk/blob/v0.42.0/RELEASE_NOTES.md).
+The IBC module is also contained in the releases for [v0.41.x](https://github.com/reapchain/cosmos-sdk/releases/tag/v0.41.0) and [v0.42.x](https://github.com/reapchain/cosmos-sdk/releases/tag/v0.42.0).
+Please see the Release Notes for [v0.41.x](https://github.com/reapchain/cosmos-sdk/blob/v0.41.0/RELEASE_NOTES.md) and [v0.42.x](https://github.com/reapchain/cosmos-sdk/blob/v0.42.0/RELEASE_NOTES.md).
 
-The IBC module was removed in the commit hash [da064e13d56add466548135739c5860a9f7ed842](https://github.com/cosmos/cosmos-sdk/commit/da064e13d56add466548135739c5860a9f7ed842) on the SDK. The release for SDK v0.43.0 will be the first release without the IBC module.
+The IBC module was removed in the commit hash [da064e13d56add466548135739c5860a9f7ed842](https://github.com/reapchain/cosmos-sdk/commit/da064e13d56add466548135739c5860a9f7ed842) on the SDK. The release for SDK v0.43.0 will be the first release without the IBC module.
 
-Backports should be made to the [release/v0.42.x](https://github.com/cosmos/cosmos-sdk/tree/release/v0.42.x) branch on the SDK.
+Backports should be made to the [release/v0.42.x](https://github.com/reapchain/cosmos-sdk/tree/release/v0.42.x) branch on the SDK.

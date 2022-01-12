@@ -8,9 +8,9 @@ import (
 	"github.com/reapchain/reapchain-core/light"
 	tmtypes "github.com/reapchain/reapchain-core/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/reapchain/cosmos-sdk/codec"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
 	clienttypes "github.com/cosmos/ibc-go/v2/modules/core/02-client/types"
 	connectiontypes "github.com/cosmos/ibc-go/v2/modules/core/03-connection/types"
 	channeltypes "github.com/cosmos/ibc-go/v2/modules/core/04-channel/types"

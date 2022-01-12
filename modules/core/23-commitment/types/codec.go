@@ -1,7 +1,7 @@
 package types
 
 import (
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
+	codectypes "github.com/reapchain/cosmos-sdk/codec/types"
 	"github.com/cosmos/ibc-go/v2/modules/core/exported"
 )
 

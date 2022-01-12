@@ -9,7 +9,7 @@ This is visually explained in the following decision tree:
 
 ![](releases-decision-tree.png)
 
-When bumping the dependencies of [Cosmos SDK](https://github.com/cosmos/cosmos-sdk) and [Tendermint](https://github.com/reapchain/reapchain-core) we will only treat patch releases as non state-machine breaking.
+When bumping the dependencies of [Cosmos SDK](https://github.com/reapchain/cosmos-sdk) and [Tendermint](https://github.com/reapchain/reapchain-core) we will only treat patch releases as non state-machine breaking.
 
 ## <a name="backwards"></a> Backwards compatibility
 

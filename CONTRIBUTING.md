@@ -62,7 +62,7 @@ Other notes:
 When proposing an architecture decision for the ibc-go, please create an [ADR](./docs/architecture/README.md)
 so further discussions can be made. We are following this process so all involved parties are in
 agreement before any party begins coding the proposed implementation. If you would like to see some examples
-of how these are written refer to [Cosmos SDK ADRs](https://github.com/cosmos/cosmos-sdk/tree/master/docs/architecture)
+of how these are written refer to [Cosmos SDK ADRs](https://github.com/reapchain/cosmos-sdk/tree/master/docs/architecture)
 
 ## Pull Requests
 

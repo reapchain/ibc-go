@@ -5,9 +5,9 @@ import (
 	"strings"
 
 	"github.com/armon/go-metrics"
-	"github.com/cosmos/cosmos-sdk/telemetry"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/reapchain/cosmos-sdk/telemetry"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
 
 	"github.com/cosmos/ibc-go/v2/modules/apps/transfer/types"
 	clienttypes "github.com/cosmos/ibc-go/v2/modules/core/02-client/types"

@@ -1,10 +1,10 @@
 package keeper
 
 import (
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	capabilitykeeper "github.com/cosmos/cosmos-sdk/x/capability/keeper"
-	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
+	"github.com/reapchain/cosmos-sdk/codec"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	capabilitykeeper "github.com/reapchain/cosmos-sdk/x/capability/keeper"
+	paramtypes "github.com/reapchain/cosmos-sdk/x/params/types"
 	clientkeeper "github.com/cosmos/ibc-go/v2/modules/core/02-client/keeper"
 	clienttypes "github.com/cosmos/ibc-go/v2/modules/core/02-client/types"
 	connectionkeeper "github.com/cosmos/ibc-go/v2/modules/core/03-connection/keeper"

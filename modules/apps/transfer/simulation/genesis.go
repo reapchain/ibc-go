@@ -6,8 +6,8 @@ import (
 	"math/rand"
 	"strings"
 
-	"github.com/cosmos/cosmos-sdk/types/module"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
+	"github.com/reapchain/cosmos-sdk/types/module"
+	simtypes "github.com/reapchain/cosmos-sdk/types/simulation"
 	"github.com/cosmos/ibc-go/v2/modules/apps/transfer/types"
 )
 

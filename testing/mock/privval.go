@@ -5,9 +5,9 @@ import (
 	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
 	tmtypes "github.com/reapchain/reapchain-core/types"
 
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
+	cryptocodec "github.com/reapchain/cosmos-sdk/crypto/codec"
+	"github.com/reapchain/cosmos-sdk/crypto/keys/ed25519"
+	cryptotypes "github.com/reapchain/cosmos-sdk/crypto/types"
 	"github.com/reapchain/reapchain-core/vrfunc"
 )
 

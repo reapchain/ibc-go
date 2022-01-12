@@ -1,7 +1,7 @@
 package connection
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
 	"github.com/cosmos/ibc-go/v2/modules/core/03-connection/keeper"
 	"github.com/cosmos/ibc-go/v2/modules/core/03-connection/types"
 )

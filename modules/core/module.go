@@ -12,12 +12,12 @@ import (
 
 	abci "github.com/reapchain/reapchain-core/abci/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
+	"github.com/reapchain/cosmos-sdk/client"
+	"github.com/reapchain/cosmos-sdk/codec"
+	codectypes "github.com/reapchain/cosmos-sdk/codec/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	"github.com/reapchain/cosmos-sdk/types/module"
+	simtypes "github.com/reapchain/cosmos-sdk/types/simulation"
 	ibcclient "github.com/cosmos/ibc-go/v2/modules/core/02-client"
 	clientkeeper "github.com/cosmos/ibc-go/v2/modules/core/02-client/keeper"
 	clienttypes "github.com/cosmos/ibc-go/v2/modules/core/02-client/types"

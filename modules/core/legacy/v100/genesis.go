@@ -1,9 +1,9 @@
 package v100
 
 import (
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	genutiltypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
+	"github.com/reapchain/cosmos-sdk/client"
+	"github.com/reapchain/cosmos-sdk/codec"
+	genutiltypes "github.com/reapchain/cosmos-sdk/x/genutil/types"
 	tmtypes "github.com/reapchain/reapchain-core/types"
 
 	clientv100 "github.com/cosmos/ibc-go/v2/modules/core/02-client/legacy/v100"

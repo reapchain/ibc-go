@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/reapchain/cosmos-sdk/crypto/keys/secp256k1"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	authtypes "github.com/reapchain/cosmos-sdk/x/auth/types"
 	"github.com/cosmos/ibc-go/v2/testing/simapp"
 
 	"github.com/stretchr/testify/require"

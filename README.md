@@ -26,7 +26,7 @@
   <a href="https://sourcegraph.com/github.com/cosmos/ibc-go?badge">
     <img alt="Imported by" src="https://sourcegraph.com/github.com/cosmos/ibc-go/-/badge.svg" />
   </a>
-    <img alt="Lint Status" src="https://github.com/cosmos/cosmos-sdk/workflows/Lint/badge.svg" />
+    <img alt="Lint Status" src="https://github.com/reapchain/cosmos-sdk/workflows/Lint/badge.svg" />
 </div>
 
 Interblockchain communication protocol (IBC) implementation in Golang built as a SDK module.

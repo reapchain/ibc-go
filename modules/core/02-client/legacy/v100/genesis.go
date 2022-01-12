@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"time"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/reapchain/cosmos-sdk/codec"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
 
 	"github.com/cosmos/ibc-go/v2/modules/core/02-client/types"
 	host "github.com/cosmos/ibc-go/v2/modules/core/24-host"

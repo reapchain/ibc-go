@@ -5,10 +5,10 @@ import (
 
 	tmtypes "github.com/reapchain/reapchain-core/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/reapchain/cosmos-sdk/client"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/reapchain/cosmos-sdk/codec"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
 	"github.com/cosmos/ibc-go/v2/modules/core/02-client/types"
 	commitmenttypes "github.com/cosmos/ibc-go/v2/modules/core/23-commitment/types"
 	host "github.com/cosmos/ibc-go/v2/modules/core/24-host"

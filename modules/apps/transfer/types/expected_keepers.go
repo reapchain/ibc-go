@@ -1,9 +1,9 @@
 package types
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth/types"
-	capabilitytypes "github.com/cosmos/cosmos-sdk/x/capability/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	"github.com/reapchain/cosmos-sdk/x/auth/types"
+	capabilitytypes "github.com/reapchain/cosmos-sdk/x/capability/types"
 	connectiontypes "github.com/cosmos/ibc-go/v2/modules/core/03-connection/types"
 	channeltypes "github.com/cosmos/ibc-go/v2/modules/core/04-channel/types"
 	ibcexported "github.com/cosmos/ibc-go/v2/modules/core/exported"

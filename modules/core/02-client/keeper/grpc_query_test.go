@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"time"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	grpctypes "github.com/cosmos/cosmos-sdk/types/grpc"
-	"github.com/cosmos/cosmos-sdk/types/query"
+	codectypes "github.com/reapchain/cosmos-sdk/codec/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	grpctypes "github.com/reapchain/cosmos-sdk/types/grpc"
+	"github.com/reapchain/cosmos-sdk/types/query"
 	"google.golang.org/grpc/metadata"
 
 	"github.com/cosmos/ibc-go/v2/modules/core/02-client/types"

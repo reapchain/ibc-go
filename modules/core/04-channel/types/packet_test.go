@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
+	"github.com/reapchain/cosmos-sdk/codec"
+	codectypes "github.com/reapchain/cosmos-sdk/codec/types"
 	clienttypes "github.com/cosmos/ibc-go/v2/modules/core/02-client/types"
 	"github.com/cosmos/ibc-go/v2/modules/core/04-channel/types"
 )
