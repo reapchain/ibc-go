@@ -14,7 +14,7 @@ require (
 	github.com/pkg/errors v0.9.1
 	github.com/rakyll/statik v0.1.7
 	github.com/reapchain/cosmos-sdk v0.44.3
-	github.com/reapchain/reapchain-core v0.1.1
+	github.com/reapchain/reapchain-core v0.1.2
 	github.com/spf13/cast v1.4.1
 	github.com/spf13/cobra v1.3.0
 	github.com/spf13/viper v1.10.1
