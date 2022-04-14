@@ -1,16 +1,16 @@
 package controller
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	capabilitytypes "github.com/cosmos/cosmos-sdk/x/capability/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
+	capabilitytypes "github.com/reapchain/cosmos-sdk/x/capability/types"
 
-	"github.com/cosmos/ibc-go/v3/modules/apps/27-interchain-accounts/controller/keeper"
-	"github.com/cosmos/ibc-go/v3/modules/apps/27-interchain-accounts/controller/types"
-	icatypes "github.com/cosmos/ibc-go/v3/modules/apps/27-interchain-accounts/types"
-	channeltypes "github.com/cosmos/ibc-go/v3/modules/core/04-channel/types"
-	porttypes "github.com/cosmos/ibc-go/v3/modules/core/05-port/types"
-	ibcexported "github.com/cosmos/ibc-go/v3/modules/core/exported"
+	"github.com/reapchain/ibc-go/modules/apps/27-interchain-accounts/controller/keeper"
+	"github.com/reapchain/ibc-go/modules/apps/27-interchain-accounts/controller/types"
+	icatypes "github.com/reapchain/ibc-go/modules/apps/27-interchain-accounts/types"
+	channeltypes "github.com/reapchain/ibc-go/modules/core/04-channel/types"
+	porttypes "github.com/reapchain/ibc-go/modules/core/05-port/types"
+	ibcexported "github.com/reapchain/ibc-go/modules/core/exported"
 )
 
 // IBCModule implements the ICS26 interface for interchain accounts controller chains

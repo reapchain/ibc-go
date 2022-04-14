@@ -1,10 +1,10 @@
 package types
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
 
-	connectiontypes "github.com/cosmos/ibc-go/v3/modules/core/03-connection/types"
+	connectiontypes "github.com/reapchain/ibc-go/modules/core/03-connection/types"
 )
 
 const (

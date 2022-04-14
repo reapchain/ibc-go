@@ -4,18 +4,18 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/reapchain/cosmos-sdk/codec"
+	sdk "github.com/reapchain/cosmos-sdk/types"
 	"github.com/stretchr/testify/suite"
-	tmbytes "github.com/tendermint/tendermint/libs/bytes"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	tmtypes "github.com/tendermint/tendermint/types"
+	tmbytes "github.com/reapchain/reapchain-core/libs/bytes"
+	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
+	tmtypes "github.com/reapchain/reapchain-core/types"
 
-	clienttypes "github.com/cosmos/ibc-go/v3/modules/core/02-client/types"
-	ibctmtypes "github.com/cosmos/ibc-go/v3/modules/light-clients/07-tendermint/types"
-	ibctesting "github.com/cosmos/ibc-go/v3/testing"
-	ibctestingmock "github.com/cosmos/ibc-go/v3/testing/mock"
-	"github.com/cosmos/ibc-go/v3/testing/simapp"
+	clienttypes "github.com/reapchain/ibc-go/modules/core/02-client/types"
+	ibctmtypes "github.com/reapchain/ibc-go/modules/light-clients/07-tendermint/types"
+	ibctesting "github.com/reapchain/ibc-go/testing"
+	ibctestingmock "github.com/reapchain/ibc-go/testing/mock"
+	"github.com/reapchain/ibc-go/testing/simapp"
 )
 
 const (

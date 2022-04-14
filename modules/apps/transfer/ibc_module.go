@@ -4,16 +4,16 @@ import (
 	"fmt"
 	"math"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	capabilitytypes "github.com/cosmos/cosmos-sdk/x/capability/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
+	capabilitytypes "github.com/reapchain/cosmos-sdk/x/capability/types"
 
-	"github.com/cosmos/ibc-go/v3/modules/apps/transfer/keeper"
-	"github.com/cosmos/ibc-go/v3/modules/apps/transfer/types"
-	channeltypes "github.com/cosmos/ibc-go/v3/modules/core/04-channel/types"
-	porttypes "github.com/cosmos/ibc-go/v3/modules/core/05-port/types"
-	host "github.com/cosmos/ibc-go/v3/modules/core/24-host"
-	ibcexported "github.com/cosmos/ibc-go/v3/modules/core/exported"
+	"github.com/reapchain/ibc-go/modules/apps/transfer/keeper"
+	"github.com/reapchain/ibc-go/modules/apps/transfer/types"
+	channeltypes "github.com/reapchain/ibc-go/modules/core/04-channel/types"
+	porttypes "github.com/reapchain/ibc-go/modules/core/05-port/types"
+	host "github.com/reapchain/ibc-go/modules/core/24-host"
+	ibcexported "github.com/reapchain/ibc-go/modules/core/exported"
 )
 
 // IBCModule implements the ICS26 interface for transfer given the transfer keeper.
@@ -39,7 +39,7 @@ func ValidateTransferChannelParams(
 	channelID string,
 ) error {
 	// NOTE: for escrow address security only 2^32 channels are allowed to be created
-	// Issue: https://github.com/cosmos/cosmos-sdk/issues/7737
+	// Issue: https://github.com/reapchain/cosmos-sdk/issues/7737
 	channelSequence, err := channeltypes.ParseChannelSequence(channelID)
 	if err != nil {
 		return err

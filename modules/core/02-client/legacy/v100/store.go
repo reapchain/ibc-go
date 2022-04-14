@@ -4,18 +4,18 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/store/prefix"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/reapchain/cosmos-sdk/codec"
+	codectypes "github.com/reapchain/cosmos-sdk/codec/types"
+	"github.com/reapchain/cosmos-sdk/store/prefix"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
 
-	"github.com/cosmos/ibc-go/v3/modules/core/02-client/types"
-	clienttypes "github.com/cosmos/ibc-go/v3/modules/core/02-client/types"
-	host "github.com/cosmos/ibc-go/v3/modules/core/24-host"
-	"github.com/cosmos/ibc-go/v3/modules/core/exported"
-	smtypes "github.com/cosmos/ibc-go/v3/modules/light-clients/06-solomachine/types"
-	ibctmtypes "github.com/cosmos/ibc-go/v3/modules/light-clients/07-tendermint/types"
+	"github.com/reapchain/ibc-go/modules/core/02-client/types"
+	clienttypes "github.com/reapchain/ibc-go/modules/core/02-client/types"
+	host "github.com/reapchain/ibc-go/modules/core/24-host"
+	"github.com/reapchain/ibc-go/modules/core/exported"
+	smtypes "github.com/reapchain/ibc-go/modules/light-clients/06-solomachine/types"
+	ibctmtypes "github.com/reapchain/ibc-go/modules/light-clients/07-tendermint/types"
 )
 
 // MigrateStore performs in-place store migrations from SDK v0.40 of the IBC module to v1.0.0 of ibc-go.

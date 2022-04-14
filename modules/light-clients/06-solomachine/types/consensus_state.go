@@ -3,11 +3,11 @@ package types
 import (
 	"strings"
 
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	cryptotypes "github.com/reapchain/cosmos-sdk/crypto/types"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
 
-	clienttypes "github.com/cosmos/ibc-go/v3/modules/core/02-client/types"
-	"github.com/cosmos/ibc-go/v3/modules/core/exported"
+	clienttypes "github.com/reapchain/ibc-go/modules/core/02-client/types"
+	"github.com/reapchain/ibc-go/modules/core/exported"
 )
 
 var _ exported.ConsensusState = &ConsensusState{}

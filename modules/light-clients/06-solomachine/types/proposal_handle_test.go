@@ -1,10 +1,10 @@
 package types_test
 
 import (
-	"github.com/cosmos/ibc-go/v3/modules/core/exported"
-	"github.com/cosmos/ibc-go/v3/modules/light-clients/06-solomachine/types"
-	ibctmtypes "github.com/cosmos/ibc-go/v3/modules/light-clients/07-tendermint/types"
-	ibctesting "github.com/cosmos/ibc-go/v3/testing"
+	"github.com/reapchain/ibc-go/modules/core/exported"
+	"github.com/reapchain/ibc-go/modules/light-clients/06-solomachine/types"
+	ibctmtypes "github.com/reapchain/ibc-go/modules/light-clients/07-tendermint/types"
+	ibctesting "github.com/reapchain/ibc-go/testing"
 )
 
 func (suite *SoloMachineTestSuite) TestCheckSubstituteAndUpdateState() {

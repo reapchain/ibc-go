@@ -6,13 +6,13 @@ package types
 import (
 	fmt "fmt"
 	_go "github.com/confio/ics23/go"
-	types "github.com/cosmos/ibc-go/v3/modules/core/02-client/types"
-	types1 "github.com/cosmos/ibc-go/v3/modules/core/23-commitment/types"
+	types "github.com/reapchain/ibc-go/modules/core/02-client/types"
+	types1 "github.com/reapchain/ibc-go/modules/core/23-commitment/types"
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"
 	github_com_gogo_protobuf_types "github.com/gogo/protobuf/types"
-	github_com_tendermint_tendermint_libs_bytes "github.com/tendermint/tendermint/libs/bytes"
-	types2 "github.com/tendermint/tendermint/proto/tendermint/types"
+	github_com_tendermint_tendermint_libs_bytes "github.com/reapchain/reapchain-core/libs/bytes"
+	types2 "github.com/reapchain/reapchain-core/proto/reapchain/types"
 	_ "google.golang.org/protobuf/types/known/durationpb"
 	_ "google.golang.org/protobuf/types/known/timestamppb"
 	io "io"
@@ -107,7 +107,7 @@ type ConsensusState struct {
 	Timestamp time.Time `protobuf:"bytes,1,opt,name=timestamp,proto3,stdtime" json:"timestamp"`
 	// commitment root (i.e app hash)
 	Root               types1.MerkleRoot                                    `protobuf:"bytes,2,opt,name=root,proto3" json:"root"`
-	NextValidatorsHash github_com_tendermint_tendermint_libs_bytes.HexBytes `protobuf:"bytes,3,opt,name=next_validators_hash,json=nextValidatorsHash,proto3,casttype=github.com/tendermint/tendermint/libs/bytes.HexBytes" json:"next_validators_hash,omitempty" yaml:"next_validators_hash"`
+	NextValidatorsHash github_com_tendermint_tendermint_libs_bytes.HexBytes `protobuf:"bytes,3,opt,name=next_validators_hash,json=nextValidatorsHash,proto3,casttype=github.com/reapchain/reapchain-core/libs/bytes.HexBytes" json:"next_validators_hash,omitempty" yaml:"next_validators_hash"`
 }
 
 func (m *ConsensusState) Reset()         { *m = ConsensusState{} }

@@ -3,17 +3,17 @@ package client_test
 import (
 	"testing"
 
-	upgradetypes "github.com/cosmos/cosmos-sdk/x/upgrade/types"
+	upgradetypes "github.com/reapchain/cosmos-sdk/x/upgrade/types"
 	"github.com/stretchr/testify/suite"
-	abci "github.com/tendermint/tendermint/abci/types"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	abci "github.com/reapchain/reapchain-core/abci/types"
+	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
 
-	client "github.com/cosmos/ibc-go/v3/modules/core/02-client"
-	"github.com/cosmos/ibc-go/v3/modules/core/02-client/types"
-	"github.com/cosmos/ibc-go/v3/modules/core/exported"
-	ibctmtypes "github.com/cosmos/ibc-go/v3/modules/light-clients/07-tendermint/types"
-	localhosttypes "github.com/cosmos/ibc-go/v3/modules/light-clients/09-localhost/types"
-	ibctesting "github.com/cosmos/ibc-go/v3/testing"
+	client "github.com/reapchain/ibc-go/modules/core/02-client"
+	"github.com/reapchain/ibc-go/modules/core/02-client/types"
+	"github.com/reapchain/ibc-go/modules/core/exported"
+	ibctmtypes "github.com/reapchain/ibc-go/modules/light-clients/07-tendermint/types"
+	localhosttypes "github.com/reapchain/ibc-go/modules/light-clients/09-localhost/types"
+	ibctesting "github.com/reapchain/ibc-go/testing"
 )
 
 type ClientTestSuite struct {

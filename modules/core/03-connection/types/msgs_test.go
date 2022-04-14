@@ -5,19 +5,19 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cosmos/cosmos-sdk/store/iavl"
-	"github.com/cosmos/cosmos-sdk/store/rootmulti"
-	storetypes "github.com/cosmos/cosmos-sdk/store/types"
+	"github.com/reapchain/cosmos-sdk/store/iavl"
+	"github.com/reapchain/cosmos-sdk/store/rootmulti"
+	storetypes "github.com/reapchain/cosmos-sdk/store/types"
 	"github.com/stretchr/testify/suite"
-	abci "github.com/tendermint/tendermint/abci/types"
+	abci "github.com/reapchain/reapchain-core/abci/types"
 	dbm "github.com/tendermint/tm-db"
 
-	clienttypes "github.com/cosmos/ibc-go/v3/modules/core/02-client/types"
-	"github.com/cosmos/ibc-go/v3/modules/core/03-connection/types"
-	commitmenttypes "github.com/cosmos/ibc-go/v3/modules/core/23-commitment/types"
-	ibctmtypes "github.com/cosmos/ibc-go/v3/modules/light-clients/07-tendermint/types"
-	ibctesting "github.com/cosmos/ibc-go/v3/testing"
-	"github.com/cosmos/ibc-go/v3/testing/simapp"
+	clienttypes "github.com/reapchain/ibc-go/modules/core/02-client/types"
+	"github.com/reapchain/ibc-go/modules/core/03-connection/types"
+	commitmenttypes "github.com/reapchain/ibc-go/modules/core/23-commitment/types"
+	ibctmtypes "github.com/reapchain/ibc-go/modules/light-clients/07-tendermint/types"
+	ibctesting "github.com/reapchain/ibc-go/testing"
+	"github.com/reapchain/ibc-go/testing/simapp"
 )
 
 var (

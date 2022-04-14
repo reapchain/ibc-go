@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"regexp"
 
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
 
-	host "github.com/cosmos/ibc-go/v3/modules/core/24-host"
+	host "github.com/reapchain/ibc-go/modules/core/24-host"
 )
 
 const (

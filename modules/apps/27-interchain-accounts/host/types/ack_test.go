@@ -3,14 +3,14 @@ package types_test
 import (
 	"testing"
 
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
 	"github.com/stretchr/testify/suite"
-	abcitypes "github.com/tendermint/tendermint/abci/types"
-	tmprotostate "github.com/tendermint/tendermint/proto/tendermint/state"
-	tmstate "github.com/tendermint/tendermint/state"
+	abcitypes "github.com/reapchain/reapchain-core/abci/types"
+	tmprotostate "github.com/reapchain/reapchain-core/proto/reapchain/state"
+	tmstate "github.com/reapchain/reapchain-core/state"
 
-	"github.com/cosmos/ibc-go/v3/modules/apps/27-interchain-accounts/host/types"
-	ibctesting "github.com/cosmos/ibc-go/v3/testing"
+	"github.com/reapchain/ibc-go/modules/apps/27-interchain-accounts/host/types"
+	ibctesting "github.com/reapchain/ibc-go/testing"
 )
 
 const (

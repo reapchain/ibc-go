@@ -1,9 +1,9 @@
 package keeper
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
 	
-	"github.com/cosmos/ibc-go/v3/modules/core/03-connection/types"
+	"github.com/reapchain/ibc-go/modules/core/03-connection/types"
 )
 
 // EmitConnectionOpenInitEvent emits a connection open init event

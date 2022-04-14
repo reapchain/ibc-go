@@ -4,14 +4,14 @@ import (
 	"fmt"
 	"testing"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/kv"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	"github.com/reapchain/cosmos-sdk/types/kv"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/ibc-go/v3/modules/core/04-channel/simulation"
-	"github.com/cosmos/ibc-go/v3/modules/core/04-channel/types"
-	host "github.com/cosmos/ibc-go/v3/modules/core/24-host"
-	"github.com/cosmos/ibc-go/v3/testing/simapp"
+	"github.com/reapchain/ibc-go/modules/core/04-channel/simulation"
+	"github.com/reapchain/ibc-go/modules/core/04-channel/types"
+	host "github.com/reapchain/ibc-go/modules/core/24-host"
+	"github.com/reapchain/ibc-go/testing/simapp"
 )
 
 func TestDecodeStore(t *testing.T) {

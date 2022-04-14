@@ -3,15 +3,15 @@ package types_test
 import (
 	"time"
 
-	"github.com/tendermint/tendermint/crypto/tmhash"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	tmtypes "github.com/tendermint/tendermint/types"
+	"github.com/reapchain/reapchain-core/crypto/tmhash"
+	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
+	tmtypes "github.com/reapchain/reapchain-core/types"
 
-	clienttypes "github.com/cosmos/ibc-go/v3/modules/core/02-client/types"
-	"github.com/cosmos/ibc-go/v3/modules/core/exported"
-	"github.com/cosmos/ibc-go/v3/modules/light-clients/07-tendermint/types"
-	ibctesting "github.com/cosmos/ibc-go/v3/testing"
-	ibctestingmock "github.com/cosmos/ibc-go/v3/testing/mock"
+	clienttypes "github.com/reapchain/ibc-go/modules/core/02-client/types"
+	"github.com/reapchain/ibc-go/modules/core/exported"
+	"github.com/reapchain/ibc-go/modules/light-clients/07-tendermint/types"
+	ibctesting "github.com/reapchain/ibc-go/testing"
+	ibctestingmock "github.com/reapchain/ibc-go/testing/mock"
 )
 
 func (suite *TendermintTestSuite) TestMisbehaviour() {

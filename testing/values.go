@@ -7,13 +7,13 @@ package ibctesting
 import (
 	"time"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
 
-	ibctransfertypes "github.com/cosmos/ibc-go/v3/modules/apps/transfer/types"
-	connectiontypes "github.com/cosmos/ibc-go/v3/modules/core/03-connection/types"
-	commitmenttypes "github.com/cosmos/ibc-go/v3/modules/core/23-commitment/types"
-	ibctmtypes "github.com/cosmos/ibc-go/v3/modules/light-clients/07-tendermint/types"
-	"github.com/cosmos/ibc-go/v3/testing/mock"
+	ibctransfertypes "github.com/reapchain/ibc-go/modules/apps/transfer/types"
+	connectiontypes "github.com/reapchain/ibc-go/modules/core/03-connection/types"
+	commitmenttypes "github.com/reapchain/ibc-go/modules/core/23-commitment/types"
+	ibctmtypes "github.com/reapchain/ibc-go/modules/light-clients/07-tendermint/types"
+	"github.com/reapchain/ibc-go/testing/mock"
 )
 
 const (

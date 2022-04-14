@@ -1,13 +1,13 @@
 package keeper
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
 	"github.com/gogo/protobuf/proto"
 
-	"github.com/cosmos/ibc-go/v3/modules/apps/27-interchain-accounts/host/types"
-	icatypes "github.com/cosmos/ibc-go/v3/modules/apps/27-interchain-accounts/types"
-	channeltypes "github.com/cosmos/ibc-go/v3/modules/core/04-channel/types"
+	"github.com/reapchain/ibc-go/modules/apps/27-interchain-accounts/host/types"
+	icatypes "github.com/reapchain/ibc-go/modules/apps/27-interchain-accounts/types"
+	channeltypes "github.com/reapchain/ibc-go/modules/core/04-channel/types"
 )
 
 // OnRecvPacket handles a given interchain accounts packet on a destination host chain.

@@ -3,13 +3,13 @@ package keeper_test
 import (
 	"testing"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/reapchain/cosmos-sdk/baseapp"
+	sdk "github.com/reapchain/cosmos-sdk/types"
 	"github.com/stretchr/testify/suite"
-	"github.com/tendermint/tendermint/crypto"
+	"github.com/reapchain/reapchain-core/crypto"
 
-	"github.com/cosmos/ibc-go/v3/modules/apps/transfer/types"
-	ibctesting "github.com/cosmos/ibc-go/v3/testing"
+	"github.com/reapchain/ibc-go/modules/apps/transfer/types"
+	ibctesting "github.com/reapchain/ibc-go/testing"
 )
 
 type KeeperTestSuite struct {

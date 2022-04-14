@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"testing"
 
-	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
-	"github.com/cosmos/cosmos-sdk/x/genutil/client/cli"
+	svrcmd "github.com/reapchain/cosmos-sdk/server/cmd"
+	"github.com/reapchain/cosmos-sdk/x/genutil/client/cli"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/ibc-go/v3/testing/simapp"
-	"github.com/cosmos/ibc-go/v3/testing/simapp/simd/cmd"
+	"github.com/reapchain/ibc-go/testing/simapp"
+	"github.com/reapchain/ibc-go/testing/simapp/simd/cmd"
 )
 
 func TestInitCmd(t *testing.T) {

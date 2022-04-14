@@ -3,19 +3,19 @@ package keeper_test
 import (
 	"time"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	disttypes "github.com/cosmos/cosmos-sdk/x/distribution/types"
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	codectypes "github.com/reapchain/cosmos-sdk/codec/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	banktypes "github.com/reapchain/cosmos-sdk/x/bank/types"
+	disttypes "github.com/reapchain/cosmos-sdk/x/distribution/types"
+	govtypes "github.com/reapchain/cosmos-sdk/x/gov/types"
+	stakingtypes "github.com/reapchain/cosmos-sdk/x/staking/types"
 
-	"github.com/cosmos/ibc-go/v3/modules/apps/27-interchain-accounts/host/types"
-	icatypes "github.com/cosmos/ibc-go/v3/modules/apps/27-interchain-accounts/types"
-	transfertypes "github.com/cosmos/ibc-go/v3/modules/apps/transfer/types"
-	clienttypes "github.com/cosmos/ibc-go/v3/modules/core/02-client/types"
-	channeltypes "github.com/cosmos/ibc-go/v3/modules/core/04-channel/types"
-	ibctesting "github.com/cosmos/ibc-go/v3/testing"
+	"github.com/reapchain/ibc-go/modules/apps/27-interchain-accounts/host/types"
+	icatypes "github.com/reapchain/ibc-go/modules/apps/27-interchain-accounts/types"
+	transfertypes "github.com/reapchain/ibc-go/modules/apps/transfer/types"
+	clienttypes "github.com/reapchain/ibc-go/modules/core/02-client/types"
+	channeltypes "github.com/reapchain/ibc-go/modules/core/04-channel/types"
+	ibctesting "github.com/reapchain/ibc-go/testing"
 )
 
 func (suite *KeeperTestSuite) TestOnRecvPacket() {

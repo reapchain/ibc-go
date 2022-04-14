@@ -4,14 +4,14 @@ import (
 	"fmt"
 	"time"
 
-	tmtypes "github.com/tendermint/tendermint/types"
+	tmtypes "github.com/reapchain/reapchain-core/types"
 
-	clienttypes "github.com/cosmos/ibc-go/v3/modules/core/02-client/types"
-	commitmenttypes "github.com/cosmos/ibc-go/v3/modules/core/23-commitment/types"
-	"github.com/cosmos/ibc-go/v3/modules/core/exported"
-	types "github.com/cosmos/ibc-go/v3/modules/light-clients/07-tendermint/types"
-	ibctesting "github.com/cosmos/ibc-go/v3/testing"
-	ibctestingmock "github.com/cosmos/ibc-go/v3/testing/mock"
+	clienttypes "github.com/reapchain/ibc-go/modules/core/02-client/types"
+	commitmenttypes "github.com/reapchain/ibc-go/modules/core/23-commitment/types"
+	"github.com/reapchain/ibc-go/modules/core/exported"
+	types "github.com/reapchain/ibc-go/modules/light-clients/07-tendermint/types"
+	ibctesting "github.com/reapchain/ibc-go/testing"
+	ibctestingmock "github.com/reapchain/ibc-go/testing/mock"
 )
 
 func (suite *TendermintTestSuite) TestCheckHeaderAndUpdateState() {

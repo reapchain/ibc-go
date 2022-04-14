@@ -136,14 +136,14 @@ Proofs are passed from core IBC to light-clients as bytes. It is up to light cli
 [ICS-24 Host State Machine Requirements](https://github.com/cosmos/ics/tree/master/spec/core/ics-024-host-requirements). 
 - The proof format that all implementations must be able to produce and verify is defined in [ICS-23 Proofs](https://github.com/confio/ics23) implementation.
 
-### [Capabilities](https://github.com/cosmos/cosmos-sdk/blob/master/docs/core/ocap.md)
+### [Capabilities](https://github.com/reapchain/cosmos-sdk/blob/master/docs/core/ocap.md)
 
 IBC is intended to work in execution environments where modules do not necessarily trust each
 other. Thus, IBC must authenticate module actions on ports and channels so that only modules with the
 appropriate permissions can use them. 
 
 This module authentication is accomplished using a [dynamic
-capability store](https://github.com/cosmos/cosmos-sdk/blob/master/docs/architecture/adr-003-dynamic-capability-store.md). Upon binding to a port or
+capability store](https://github.com/reapchain/cosmos-sdk/blob/master/docs/architecture/adr-003-dynamic-capability-store.md). Upon binding to a port or
 creating a channel for a module, IBC returns a dynamic capability that the module must claim in
 order to use that port or channel. The dynamic capability module prevents other modules from using that port or channel since
 they do not own the appropriate capability.
