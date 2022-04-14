@@ -95,7 +95,7 @@ require (
 	github.com/prometheus/common v0.32.1 // indirect
 	github.com/prometheus/procfs v0.7.3 // indirect
 	github.com/rcrowley/go-metrics v0.0.0-20201227073835-cf1acfcdf475 // indirect
-	github.com/reapchain/iavl v0.17.3 // indirect
+	github.com/reapchain/iavl v1.17.3 // indirect
 	github.com/rs/cors v1.8.2 // indirect
 	github.com/rs/zerolog v1.23.0 // indirect
 	github.com/sasha-s/go-deadlock v0.3.1 // indirect
