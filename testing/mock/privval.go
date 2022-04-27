@@ -16,10 +16,15 @@ var _ tmtypes.PrivValidator = PV{}
 // Only use it for testing.
 type PV struct {
 	PrivKey cryptotypes.PrivKey
+	Type              string
 }
 
-func NewPV() PV {
-	return PV{ed25519.GenPrivKey()}
+func (pv PV) GetType() (string, error) {
+	return pv.Type, nil
+}
+
+func NewPV(validatorType string) PV {
+	return PV{ed25519.GenPrivKey(), validatorType}
 }
 
 // GetPubKey implements PrivValidator interface
