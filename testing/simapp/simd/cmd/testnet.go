@@ -213,6 +213,7 @@ func InitTestnet(
 			stakingtypes.NewDescription(nodeDirName, "", "", "", ""),
 			stakingtypes.NewCommissionRates(sdk.OneDec(), sdk.OneDec(), sdk.OneDec()),
 			sdk.OneInt(),
+			"standing",
 		)
 		if err != nil {
 			return err
