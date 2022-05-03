@@ -25,12 +25,12 @@ import (
 	"github.com/reapchain/cosmos-sdk/x/genutil"
 	genutiltypes "github.com/reapchain/cosmos-sdk/x/genutil/types"
 	stakingtypes "github.com/reapchain/cosmos-sdk/x/staking/types"
-	"github.com/spf13/cobra"
 	tmconfig "github.com/reapchain/reapchain-core/config"
 	tmos "github.com/reapchain/reapchain-core/libs/os"
 	tmrand "github.com/reapchain/reapchain-core/libs/rand"
 	"github.com/reapchain/reapchain-core/types"
 	tmtime "github.com/reapchain/reapchain-core/types/time"
+	"github.com/spf13/cobra"
 )
 
 var (
@@ -213,6 +213,7 @@ func InitTestnet(
 			stakingtypes.NewDescription(nodeDirName, "", "", "", ""),
 			stakingtypes.NewCommissionRates(sdk.OneDec(), sdk.OneDec(), sdk.OneDec()),
 			sdk.OneInt(),
+			"standing",
 		)
 		if err != nil {
 			return err
