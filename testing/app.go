@@ -16,11 +16,11 @@ import (
 	capabilitykeeper "github.com/reapchain/cosmos-sdk/x/capability/keeper"
 	stakingkeeper "github.com/reapchain/cosmos-sdk/x/staking/keeper"
 	stakingtypes "github.com/reapchain/cosmos-sdk/x/staking/types"
-	"github.com/stretchr/testify/require"
 	abci "github.com/reapchain/reapchain-core/abci/types"
 	"github.com/reapchain/reapchain-core/libs/log"
-	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
+	tmproto "github.com/reapchain/reapchain-core/proto/reapchain-core/types"
 	tmtypes "github.com/reapchain/reapchain-core/types"
+	"github.com/stretchr/testify/require"
 	dbm "github.com/tendermint/tm-db"
 
 	"github.com/reapchain/ibc-go/modules/core/keeper"

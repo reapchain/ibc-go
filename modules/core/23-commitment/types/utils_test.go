@@ -3,9 +3,9 @@ package types_test
 import (
 	"fmt"
 
-	"github.com/stretchr/testify/require"
 	abci "github.com/reapchain/reapchain-core/abci/types"
-	crypto "github.com/reapchain/reapchain-core/proto/reapchain/crypto"
+	crypto "github.com/reapchain/reapchain-core/proto/reapchain-core/crypto"
+	"github.com/stretchr/testify/require"
 
 	"github.com/reapchain/ibc-go/modules/core/23-commitment/types"
 )

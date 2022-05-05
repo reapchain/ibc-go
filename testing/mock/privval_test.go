@@ -3,9 +3,9 @@ package mock_test
 import (
 	"testing"
 
-	"github.com/stretchr/testify/require"
-	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
+	tmproto "github.com/reapchain/reapchain-core/proto/reapchain-core/types"
 	tmtypes "github.com/reapchain/reapchain-core/types"
+	"github.com/stretchr/testify/require"
 
 	"github.com/reapchain/ibc-go/testing/mock"
 )

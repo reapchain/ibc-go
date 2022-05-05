@@ -4,7 +4,7 @@ import (
 	"time"
 
 	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
-	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
+	tmproto "github.com/reapchain/reapchain-core/proto/reapchain-core/types"
 	tmtypes "github.com/reapchain/reapchain-core/types"
 
 	clienttypes "github.com/reapchain/ibc-go/modules/core/02-client/types"

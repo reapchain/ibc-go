@@ -23,10 +23,10 @@ import (
 	"github.com/reapchain/cosmos-sdk/x/simulation"
 	slashingtypes "github.com/reapchain/cosmos-sdk/x/slashing/types"
 	stakingtypes "github.com/reapchain/cosmos-sdk/x/staking/types"
-	"github.com/stretchr/testify/require"
 	abci "github.com/reapchain/reapchain-core/abci/types"
 	"github.com/reapchain/reapchain-core/libs/log"
-	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
+	tmproto "github.com/reapchain/reapchain-core/proto/reapchain-core/types"
+	"github.com/stretchr/testify/require"
 	dbm "github.com/tendermint/tm-db"
 
 	ibctransfertypes "github.com/reapchain/ibc-go/modules/apps/transfer/types"

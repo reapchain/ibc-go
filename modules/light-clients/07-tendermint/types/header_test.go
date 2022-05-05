@@ -3,7 +3,7 @@ package types_test
 import (
 	"time"
 
-	tmprotocrypto "github.com/reapchain/reapchain-core/proto/reapchain/crypto"
+	tmprotocrypto "github.com/reapchain/reapchain-core/proto/reapchain-core/crypto"
 
 	clienttypes "github.com/reapchain/ibc-go/modules/core/02-client/types"
 	"github.com/reapchain/ibc-go/modules/core/exported"

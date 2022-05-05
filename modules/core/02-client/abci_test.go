@@ -4,9 +4,9 @@ import (
 	"testing"
 
 	upgradetypes "github.com/reapchain/cosmos-sdk/x/upgrade/types"
-	"github.com/stretchr/testify/suite"
 	abci "github.com/reapchain/reapchain-core/abci/types"
-	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
+	tmproto "github.com/reapchain/reapchain-core/proto/reapchain-core/types"
+	"github.com/stretchr/testify/suite"
 
 	client "github.com/reapchain/ibc-go/modules/core/02-client"
 	"github.com/reapchain/ibc-go/modules/core/02-client/types"

@@ -4,10 +4,10 @@ import (
 	"testing"
 
 	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
-	"github.com/stretchr/testify/suite"
 	abcitypes "github.com/reapchain/reapchain-core/abci/types"
-	tmprotostate "github.com/reapchain/reapchain-core/proto/reapchain/state"
+	tmprotostate "github.com/reapchain/reapchain-core/proto/reapchain-core/state"
 	tmstate "github.com/reapchain/reapchain-core/state"
+	"github.com/stretchr/testify/suite"
 
 	"github.com/reapchain/ibc-go/modules/apps/27-interchain-accounts/host/types"
 	ibctesting "github.com/reapchain/ibc-go/testing"

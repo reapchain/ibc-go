@@ -9,7 +9,7 @@ import (
 	slashingtypes "github.com/reapchain/cosmos-sdk/x/slashing/types"
 	"github.com/reapchain/cosmos-sdk/x/staking"
 	stakingtypes "github.com/reapchain/cosmos-sdk/x/staking/types"
-	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
+	tmproto "github.com/reapchain/reapchain-core/proto/reapchain-core/types"
 )
 
 // ExportAppStateAndValidators exports the state of the application for a genesis

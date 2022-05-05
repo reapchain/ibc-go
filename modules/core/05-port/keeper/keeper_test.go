@@ -4,9 +4,9 @@ import (
 	"testing"
 
 	sdk "github.com/reapchain/cosmos-sdk/types"
+	tmproto "github.com/reapchain/reapchain-core/proto/reapchain-core/types"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
-	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
 
 	"github.com/reapchain/ibc-go/modules/core/05-port/keeper"
 	"github.com/reapchain/ibc-go/testing/simapp"

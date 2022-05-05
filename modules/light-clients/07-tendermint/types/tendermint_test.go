@@ -6,10 +6,10 @@ import (
 
 	"github.com/reapchain/cosmos-sdk/codec"
 	sdk "github.com/reapchain/cosmos-sdk/types"
-	"github.com/stretchr/testify/suite"
 	tmbytes "github.com/reapchain/reapchain-core/libs/bytes"
-	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
+	tmproto "github.com/reapchain/reapchain-core/proto/reapchain-core/types"
 	tmtypes "github.com/reapchain/reapchain-core/types"
+	"github.com/stretchr/testify/suite"
 
 	clienttypes "github.com/reapchain/ibc-go/modules/core/02-client/types"
 	ibctmtypes "github.com/reapchain/ibc-go/modules/light-clients/07-tendermint/types"

@@ -3,9 +3,9 @@ package ica_test
 import (
 	"testing"
 
-	"github.com/stretchr/testify/suite"
 	"github.com/reapchain/reapchain-core/libs/log"
-	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
+	tmproto "github.com/reapchain/reapchain-core/proto/reapchain-core/types"
+	"github.com/stretchr/testify/suite"
 	dbm "github.com/tendermint/tm-db"
 
 	ica "github.com/reapchain/ibc-go/modules/apps/27-interchain-accounts"

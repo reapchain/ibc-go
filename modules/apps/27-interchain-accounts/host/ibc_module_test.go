@@ -4,15 +4,15 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/gogo/protobuf/proto"
 	sdk "github.com/reapchain/cosmos-sdk/types"
 	banktypes "github.com/reapchain/cosmos-sdk/x/bank/types"
 	capabilitytypes "github.com/reapchain/cosmos-sdk/x/capability/types"
-	"github.com/gogo/protobuf/proto"
-	"github.com/stretchr/testify/suite"
 	abcitypes "github.com/reapchain/reapchain-core/abci/types"
 	"github.com/reapchain/reapchain-core/crypto"
-	tmprotostate "github.com/reapchain/reapchain-core/proto/reapchain/state"
+	tmprotostate "github.com/reapchain/reapchain-core/proto/reapchain-core/state"
 	tmstate "github.com/reapchain/reapchain-core/state"
+	"github.com/stretchr/testify/suite"
 
 	"github.com/reapchain/ibc-go/modules/apps/27-interchain-accounts/host/types"
 	icatypes "github.com/reapchain/ibc-go/modules/apps/27-interchain-accounts/types"

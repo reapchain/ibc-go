@@ -6,9 +6,9 @@ import (
 	"net/url"
 
 	ics23 "github.com/confio/ics23/go"
-	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
 	"github.com/gogo/protobuf/proto"
-	tmcrypto "github.com/reapchain/reapchain-core/proto/reapchain/crypto"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
+	tmcrypto "github.com/reapchain/reapchain-core/proto/reapchain-core/crypto"
 
 	"github.com/reapchain/ibc-go/modules/core/exported"
 )

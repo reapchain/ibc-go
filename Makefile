@@ -400,17 +400,17 @@ proto-lint:
 proto-check-breaking:
 	@$(DOCKER_BUF) breaking --against $(HTTPS_GIT)#branch=main
 
-TM_URL              = https://raw.githubusercontent.com/tendermint/tendermint/v0.34.0-rc6/proto/reapchain
+TM_URL              = https://raw.githubusercontent.com/tendermint/tendermint/v0.34.0-rc6/proto/reapchain-core
 GOGO_PROTO_URL      = https://raw.githubusercontent.com/regen-network/protobuf/cosmos
 CONFIO_URL          = https://raw.githubusercontent.com/confio/ics23/v0.6.3
 SDK_PROTO_URL 		= https://raw.githubusercontent.com/cosmos/cosmos-sdk/v0.41.0/proto/cosmos
 
-TM_CRYPTO_TYPES     = third_party/proto/reapchain/crypto
-TM_ABCI_TYPES       = third_party/proto/reapchain/abci
-TM_TYPES            = third_party/proto/reapchain/types
-TM_VERSION          = third_party/proto/reapchain/version
-TM_LIBS             = third_party/proto/reapchain/libs/bits
-TM_P2P              = third_party/proto/reapchain/p2p
+TM_CRYPTO_TYPES     = third_party/proto/reapchain-core/crypto
+TM_ABCI_TYPES       = third_party/proto/reapchain-core/abci
+TM_TYPES            = third_party/proto/reapchain-core/types
+TM_VERSION          = third_party/proto/reapchain-core/version
+TM_LIBS             = third_party/proto/reapchain-core/libs/bits
+TM_P2P              = third_party/proto/reapchain-core/p2p
 
 SDK_QUERY 			= third_party/proto/cosmos/base/query/v1beta1
 SDK_BASE 			= third_party/proto/cosmos/base/v1beta1
