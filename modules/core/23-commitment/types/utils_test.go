@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	abci "github.com/reapchain/reapchain-core/abci/types"
-	crypto "github.com/reapchain/reapchain-core/proto/reapchain/crypto"
+	crypto "github.com/reapchain/reapchain-core/proto/reapchain-core/crypto"
 	"github.com/stretchr/testify/require"
 
 	"github.com/reapchain/ibc-go/v3/modules/core/23-commitment/types"

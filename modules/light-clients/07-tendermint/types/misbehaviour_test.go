@@ -4,7 +4,7 @@ import (
 	"time"
 
 	"github.com/reapchain/reapchain-core/crypto/tmhash"
-	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
+	tmproto "github.com/reapchain/reapchain-core/proto/reapchain-core/types"
 	tmtypes "github.com/reapchain/reapchain-core/types"
 
 	clienttypes "github.com/reapchain/ibc-go/v3/modules/core/02-client/types"

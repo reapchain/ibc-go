@@ -8,7 +8,7 @@ import (
 	ics23 "github.com/confio/ics23/go"
 	"github.com/gogo/protobuf/proto"
 	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
-	tmcrypto "github.com/reapchain/reapchain-core/proto/reapchain/crypto"
+	tmcrypto "github.com/reapchain/reapchain-core/proto/reapchain-core/crypto"
 
 	"github.com/reapchain/ibc-go/v3/modules/core/exported"
 )

@@ -12,7 +12,7 @@ import (
 	proto "github.com/gogo/protobuf/proto"
 	github_com_gogo_protobuf_types "github.com/gogo/protobuf/types"
 	github_com_tendermint_tendermint_libs_bytes "github.com/reapchain/reapchain-core/libs/bytes"
-	types2 "github.com/reapchain/reapchain-core/proto/reapchain/types"
+	types2 "github.com/reapchain/reapchain-core/proto/reapchain-core/types"
 	_ "google.golang.org/protobuf/types/known/durationpb"
 	_ "google.golang.org/protobuf/types/known/timestamppb"
 	io "io"

@@ -3,7 +3,7 @@ package mock_test
 import (
 	"testing"
 
-	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
+	tmproto "github.com/reapchain/reapchain-core/proto/reapchain-core/types"
 	tmtypes "github.com/reapchain/reapchain-core/types"
 	"github.com/stretchr/testify/require"
 

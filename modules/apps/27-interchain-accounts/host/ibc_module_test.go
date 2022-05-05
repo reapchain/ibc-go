@@ -10,7 +10,7 @@ import (
 	capabilitytypes "github.com/reapchain/cosmos-sdk/x/capability/types"
 	abcitypes "github.com/reapchain/reapchain-core/abci/types"
 	"github.com/reapchain/reapchain-core/crypto"
-	tmprotostate "github.com/reapchain/reapchain-core/proto/reapchain/state"
+	tmprotostate "github.com/reapchain/reapchain-core/proto/reapchain-core/state"
 	tmstate "github.com/reapchain/reapchain-core/state"
 	"github.com/stretchr/testify/suite"
 
