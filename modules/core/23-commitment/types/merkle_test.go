@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"testing"
 
+	abci "github.com/reapchain/reapchain-core/abci/types"
 	"github.com/stretchr/testify/require"
-	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/cosmos/ibc-go/v3/modules/core/23-commitment/types"
+	"github.com/reapchain/ibc-go/v3/modules/core/23-commitment/types"
 )
 
 func (suite *MerkleTestSuite) TestVerifyMembership() {

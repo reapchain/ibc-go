@@ -3,11 +3,11 @@ package mock_test
 import (
 	"testing"
 
+	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
+	tmtypes "github.com/reapchain/reapchain-core/types"
 	"github.com/stretchr/testify/require"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/cosmos/ibc-go/v3/testing/mock"
+	"github.com/reapchain/ibc-go/v3/testing/mock"
 )
 
 const chainID = "testChain"

@@ -7,7 +7,7 @@ order: 2
 Learn how to integrate IBC to your application and send data packets to other chains. {synopsis}
 
 This document outlines the required steps to integrate and configure the [IBC
-module](https://github.com/cosmos/ibc-go/tree/main/modules/core) to your Cosmos SDK application and
+module](https://github.com/reapchain/ibc-go/tree/main/modules/core) to your Cosmos SDK application and
 send fungible token transfers to other chains.
 
 ## Integrating the IBC module
@@ -113,7 +113,7 @@ IBC needs to know which module is bound to which port so that it can route packe
 appropriate module and call the appropriate callbacks. The port to module name mapping is handled by
 IBC's port `Keeper`. However, the mapping from module name to the relevant callbacks is accomplished
 by the port
-[`Router`](https://github.com/cosmos/ibc-go/blob/main/modules/core/05-port/types/router.go) on the
+[`Router`](https://github.com/reapchain/ibc-go/blob/main/modules/core/05-port/types/router.go) on the
 IBC module.
 
 Adding the module routes allows the IBC handler to call the appropriate callback when processing a
@@ -139,7 +139,7 @@ func NewApp(...args) *App {
 
 ### Module Managers
 
-In order to use IBC, we need to add the new modules to the module `Manager` and to the `SimulationManager` in case your application supports [simulations](https://github.com/cosmos/cosmos-sdk/blob/master/docs/building-modules/simulator.md).
+In order to use IBC, we need to add the new modules to the module `Manager` and to the `SimulationManager` in case your application supports [simulations](https://github.com/reapchain/cosmos-sdk/blob/master/docs/building-modules/simulator.md).
 
 ```go
 // app.go
@@ -176,7 +176,7 @@ past historical info at any given height in order to verify the light client `Co
 connection handhake.
 
 The IBC module also has
-[`BeginBlock`](https://github.com/cosmos/ibc-go/blob/main/modules/core/02-client/abci.go) logic as
+[`BeginBlock`](https://github.com/reapchain/ibc-go/blob/main/modules/core/02-client/abci.go) logic as
 well. This is optional as it is only required if your application uses the [localhost
 client](https://github.com/cosmos/ibc/blob/master/spec/client/ics-009-loopback-client) to connect two
 different modules from the same chain.
@@ -217,7 +217,7 @@ func NewApp(...args) *App {
 
 That's it! You have now wired up the IBC module and are now able to send fungible tokens across
 different chains. If you want to have a broader view of the changes take a look into the SDK's
-[`SimApp`](https://github.com/cosmos/ibc-go/blob/main/testing/simapp/app.go).
+[`SimApp`](https://github.com/reapchain/ibc-go/blob/main/testing/simapp/app.go).
 
 ## Next {hide}
 

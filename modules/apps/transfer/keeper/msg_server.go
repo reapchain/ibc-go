@@ -3,9 +3,9 @@ package keeper
 import (
 	"context"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
 
-	"github.com/cosmos/ibc-go/v3/modules/apps/transfer/types"
+	"github.com/reapchain/ibc-go/v3/modules/apps/transfer/types"
 )
 
 var _ types.MsgServer = Keeper{}

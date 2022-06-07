@@ -1,12 +1,12 @@
 package types
 
 import (
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/reapchain/cosmos-sdk/codec"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
 
-	clienttypes "github.com/cosmos/ibc-go/v3/modules/core/02-client/types"
-	"github.com/cosmos/ibc-go/v3/modules/core/exported"
+	clienttypes "github.com/reapchain/ibc-go/v3/modules/core/02-client/types"
+	"github.com/reapchain/ibc-go/v3/modules/core/exported"
 )
 
 // CheckMisbehaviourAndUpdateState determines whether or not the currently registered

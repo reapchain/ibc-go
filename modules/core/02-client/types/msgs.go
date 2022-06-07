@@ -1,12 +1,12 @@
 package types
 
 import (
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	codectypes "github.com/reapchain/cosmos-sdk/codec/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
 
-	host "github.com/cosmos/ibc-go/v3/modules/core/24-host"
-	"github.com/cosmos/ibc-go/v3/modules/core/exported"
+	host "github.com/reapchain/ibc-go/v3/modules/core/24-host"
+	"github.com/reapchain/ibc-go/v3/modules/core/exported"
 )
 
 // message types for the IBC client

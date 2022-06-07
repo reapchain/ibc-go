@@ -4,16 +4,16 @@ import (
 	"context"
 	"encoding/binary"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/reapchain/cosmos-sdk/client"
+	"github.com/reapchain/cosmos-sdk/codec"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
 
-	clientutils "github.com/cosmos/ibc-go/v3/modules/core/02-client/client/utils"
-	clienttypes "github.com/cosmos/ibc-go/v3/modules/core/02-client/types"
-	"github.com/cosmos/ibc-go/v3/modules/core/04-channel/types"
-	host "github.com/cosmos/ibc-go/v3/modules/core/24-host"
-	ibcclient "github.com/cosmos/ibc-go/v3/modules/core/client"
-	"github.com/cosmos/ibc-go/v3/modules/core/exported"
+	clientutils "github.com/reapchain/ibc-go/v3/modules/core/02-client/client/utils"
+	clienttypes "github.com/reapchain/ibc-go/v3/modules/core/02-client/types"
+	"github.com/reapchain/ibc-go/v3/modules/core/04-channel/types"
+	host "github.com/reapchain/ibc-go/v3/modules/core/24-host"
+	ibcclient "github.com/reapchain/ibc-go/v3/modules/core/client"
+	"github.com/reapchain/ibc-go/v3/modules/core/exported"
 )
 
 // QueryChannel returns a channel end.

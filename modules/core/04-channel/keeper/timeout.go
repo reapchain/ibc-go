@@ -3,14 +3,14 @@ package keeper
 import (
 	"bytes"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	capabilitytypes "github.com/cosmos/cosmos-sdk/x/capability/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
+	capabilitytypes "github.com/reapchain/cosmos-sdk/x/capability/types"
 
-	connectiontypes "github.com/cosmos/ibc-go/v3/modules/core/03-connection/types"
-	"github.com/cosmos/ibc-go/v3/modules/core/04-channel/types"
-	host "github.com/cosmos/ibc-go/v3/modules/core/24-host"
-	"github.com/cosmos/ibc-go/v3/modules/core/exported"
+	connectiontypes "github.com/reapchain/ibc-go/v3/modules/core/03-connection/types"
+	"github.com/reapchain/ibc-go/v3/modules/core/04-channel/types"
+	host "github.com/reapchain/ibc-go/v3/modules/core/24-host"
+	"github.com/reapchain/ibc-go/v3/modules/core/exported"
 )
 
 // TimeoutPacket is called by a module which originally attempted to send a

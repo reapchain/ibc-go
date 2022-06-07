@@ -4,14 +4,14 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/version"
+	"github.com/reapchain/cosmos-sdk/client"
+	"github.com/reapchain/cosmos-sdk/client/flags"
+	"github.com/reapchain/cosmos-sdk/version"
 	"github.com/spf13/cobra"
 
-	"github.com/cosmos/ibc-go/v3/modules/core/02-client/client/utils"
-	"github.com/cosmos/ibc-go/v3/modules/core/02-client/types"
-	host "github.com/cosmos/ibc-go/v3/modules/core/24-host"
+	"github.com/reapchain/ibc-go/v3/modules/core/02-client/client/utils"
+	"github.com/reapchain/ibc-go/v3/modules/core/02-client/types"
+	host "github.com/reapchain/ibc-go/v3/modules/core/24-host"
 )
 
 const (

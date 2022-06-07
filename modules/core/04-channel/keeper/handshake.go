@@ -3,16 +3,16 @@ package keeper
 import (
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/telemetry"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	capabilitytypes "github.com/cosmos/cosmos-sdk/x/capability/types"
+	"github.com/reapchain/cosmos-sdk/telemetry"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
+	capabilitytypes "github.com/reapchain/cosmos-sdk/x/capability/types"
 
-	connectiontypes "github.com/cosmos/ibc-go/v3/modules/core/03-connection/types"
-	"github.com/cosmos/ibc-go/v3/modules/core/04-channel/types"
-	porttypes "github.com/cosmos/ibc-go/v3/modules/core/05-port/types"
-	host "github.com/cosmos/ibc-go/v3/modules/core/24-host"
-	"github.com/cosmos/ibc-go/v3/modules/core/exported"
+	connectiontypes "github.com/reapchain/ibc-go/v3/modules/core/03-connection/types"
+	"github.com/reapchain/ibc-go/v3/modules/core/04-channel/types"
+	porttypes "github.com/reapchain/ibc-go/v3/modules/core/05-port/types"
+	host "github.com/reapchain/ibc-go/v3/modules/core/24-host"
+	"github.com/reapchain/ibc-go/v3/modules/core/exported"
 )
 
 // ChanOpenInit is called by a module to initiate a channel opening handshake with

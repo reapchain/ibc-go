@@ -18,7 +18,7 @@ Only determinstic information returned from the message execution is allowed to 
 
 ## Decision
 
-At the time of this writing, Tendermint includes the following information in the [ABCI.ResponseDeliverTx](https://github.com/tendermint/tendermint/blob/release/v0.34.13/types/results.go#L47-#L53):
+At the time of this writing, Tendermint includes the following information in the [ABCI.ResponseDeliverTx](https://github.com/reapchain/reapchain-core/blob/release/v0.34.13/types/results.go#L47-#L53):
 ```go
 // deterministicResponseDeliverTx strips non-deterministic fields from
 // ResponseDeliverTx and returns another ResponseDeliverTx.
@@ -74,7 +74,7 @@ In v0.45 of the SDK, the `*sdk.Result.Data` will contain the MsgResponse marshal
 However, the MsgResponse is not packed and marshaled as a `*codectypes.Any`, thus making it impossible from a generalized point of view to unmarshal the bytes. 
 If the bytes could be unmarshaled, then they could be packed into an `*codectypes.Any` in antcipation of the upcoming format.  
 
-Intercepting the MsgResponse before it becomes marshaled requires replicating this [code](https://github.com/cosmos/cosmos-sdk/blob/dfd47f5b449f558a855da284a9a7eabbfbad435d/baseapp/msg_service_router.go#L109-#L128). 
+Intercepting the MsgResponse before it becomes marshaled requires replicating this [code](https://github.com/reapchain/cosmos-sdk/blob/dfd47f5b449f558a855da284a9a7eabbfbad435d/baseapp/msg_service_router.go#L109-#L128). 
 It may not even be possible to replicate the linked code. The method handler would need to be accessed somehow.
 
 For these reasons it is deemed infeasible to attempt a fowards compatible approach. 
@@ -89,14 +89,14 @@ Replicate the transaction response format as provided by the current SDK verison
 When the SDK version changes, adjust the transaction response format to use the updated transaction response format. 
 Include the transaction response bytes in the result channel acknowledgement. 
 
-A test has been [written](https://github.com/cosmos/ibc-go/blob/v3.0.0-beta1/modules/apps/27-interchain-accounts/host/ibc_module_test.go#L716-#L774) to fail if the `MsgResponse` is no longer included in consensus.
+A test has been [written](https://github.com/reapchain/ibc-go/blob/v3.0.0-beta1/modules/apps/27-interchain-accounts/host/ibc_module_test.go#L716-#L774) to fail if the `MsgResponse` is no longer included in consensus.
 
 ### Error acknowledgements
 
 As indicated above, the `abci.ResponseDeliverTx.Code` is determinstic. 
 Upon transaction execution errors, an error acknowledgement should be returned including the abci code. 
 
-A test has been [written](https://github.com/cosmos/ibc-go/blob/v3.0.0-beta1/modules/apps/27-interchain-accounts/host/types/ack_test.go#L41-#L82) to fail if the ABCI code is no longer determinstic.
+A test has been [written](https://github.com/reapchain/ibc-go/blob/v3.0.0-beta1/modules/apps/27-interchain-accounts/host/types/ack_test.go#L41-#L82) to fail if the ABCI code is no longer determinstic.
 
 ## Consequences
 

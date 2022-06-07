@@ -1,12 +1,12 @@
 package types
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	capabilitytypes "github.com/cosmos/cosmos-sdk/x/capability/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	authtypes "github.com/reapchain/cosmos-sdk/x/auth/types"
+	capabilitytypes "github.com/reapchain/cosmos-sdk/x/capability/types"
 
-	channeltypes "github.com/cosmos/ibc-go/v3/modules/core/04-channel/types"
-	ibcexported "github.com/cosmos/ibc-go/v3/modules/core/exported"
+	channeltypes "github.com/reapchain/ibc-go/v3/modules/core/04-channel/types"
+	ibcexported "github.com/reapchain/ibc-go/v3/modules/core/exported"
 )
 
 // AccountKeeper defines the expected account keeper

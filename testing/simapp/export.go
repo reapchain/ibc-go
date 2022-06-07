@@ -4,12 +4,12 @@ import (
 	"encoding/json"
 	"log"
 
-	servertypes "github.com/cosmos/cosmos-sdk/server/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	slashingtypes "github.com/cosmos/cosmos-sdk/x/slashing/types"
-	"github.com/cosmos/cosmos-sdk/x/staking"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	servertypes "github.com/reapchain/cosmos-sdk/server/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	slashingtypes "github.com/reapchain/cosmos-sdk/x/slashing/types"
+	"github.com/reapchain/cosmos-sdk/x/staking"
+	stakingtypes "github.com/reapchain/cosmos-sdk/x/staking/types"
+	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
 )
 
 // ExportAppStateAndValidators exports the state of the application for a genesis

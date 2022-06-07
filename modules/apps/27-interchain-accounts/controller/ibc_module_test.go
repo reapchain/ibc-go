@@ -4,22 +4,22 @@ import (
 	"fmt"
 	"testing"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	capabilitytypes "github.com/cosmos/cosmos-sdk/x/capability/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	capabilitytypes "github.com/reapchain/cosmos-sdk/x/capability/types"
+	"github.com/reapchain/reapchain-core/crypto"
 	"github.com/stretchr/testify/suite"
-	"github.com/tendermint/tendermint/crypto"
 
-	"github.com/cosmos/ibc-go/v3/modules/apps/27-interchain-accounts/controller/types"
-	icatypes "github.com/cosmos/ibc-go/v3/modules/apps/27-interchain-accounts/types"
-	clienttypes "github.com/cosmos/ibc-go/v3/modules/core/02-client/types"
-	channeltypes "github.com/cosmos/ibc-go/v3/modules/core/04-channel/types"
-	host "github.com/cosmos/ibc-go/v3/modules/core/24-host"
-	ibctesting "github.com/cosmos/ibc-go/v3/testing"
+	"github.com/reapchain/ibc-go/v3/modules/apps/27-interchain-accounts/controller/types"
+	icatypes "github.com/reapchain/ibc-go/v3/modules/apps/27-interchain-accounts/types"
+	clienttypes "github.com/reapchain/ibc-go/v3/modules/core/02-client/types"
+	channeltypes "github.com/reapchain/ibc-go/v3/modules/core/04-channel/types"
+	host "github.com/reapchain/ibc-go/v3/modules/core/24-host"
+	ibctesting "github.com/reapchain/ibc-go/v3/testing"
 )
 
 var (
 	// TODO: Cosmos-SDK ADR-28: Update crypto.AddressHash() when sdk uses address.Module()
-	// https://github.com/cosmos/cosmos-sdk/issues/10225
+	// https://github.com/reapchain/cosmos-sdk/issues/10225
 	//
 	// TestAccAddress defines a resuable bech32 address for testing purposes
 	TestAccAddress = icatypes.GenerateAddress(sdk.AccAddress(crypto.AddressHash([]byte(icatypes.ModuleName))), ibctesting.FirstConnectionID, TestPortID)

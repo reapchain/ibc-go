@@ -5,36 +5,36 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	kmultisig "github.com/cosmos/cosmos-sdk/crypto/keys/multisig"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	servertypes "github.com/cosmos/cosmos-sdk/server/types"
-	storetypes "github.com/cosmos/cosmos-sdk/store/types"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/rest"
-	txtypes "github.com/cosmos/cosmos-sdk/types/tx"
-	authcli "github.com/cosmos/cosmos-sdk/x/auth/client/cli"
-	authrest "github.com/cosmos/cosmos-sdk/x/auth/client/rest"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/reapchain/cosmos-sdk/baseapp"
+	"github.com/reapchain/cosmos-sdk/client/flags"
+	"github.com/reapchain/cosmos-sdk/crypto/hd"
+	"github.com/reapchain/cosmos-sdk/crypto/keyring"
+	kmultisig "github.com/reapchain/cosmos-sdk/crypto/keys/multisig"
+	cryptotypes "github.com/reapchain/cosmos-sdk/crypto/types"
+	servertypes "github.com/reapchain/cosmos-sdk/server/types"
+	storetypes "github.com/reapchain/cosmos-sdk/store/types"
+	"github.com/reapchain/cosmos-sdk/testutil"
+	clitestutil "github.com/reapchain/cosmos-sdk/testutil/cli"
+	"github.com/reapchain/cosmos-sdk/testutil/network"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	"github.com/reapchain/cosmos-sdk/types/rest"
+	txtypes "github.com/reapchain/cosmos-sdk/types/tx"
+	authcli "github.com/reapchain/cosmos-sdk/x/auth/client/cli"
+	authrest "github.com/reapchain/cosmos-sdk/x/auth/client/rest"
+	authtypes "github.com/reapchain/cosmos-sdk/x/auth/types"
+	tmrand "github.com/reapchain/reapchain-core/libs/rand"
 	"github.com/spf13/cobra"
 	"github.com/stretchr/testify/suite"
-	tmrand "github.com/tendermint/tendermint/libs/rand"
 	dbm "github.com/tendermint/tm-db"
 
-	ibcclientcli "github.com/cosmos/ibc-go/v3/modules/core/02-client/client/cli"
-	"github.com/cosmos/ibc-go/v3/testing/simapp"
-	"github.com/cosmos/ibc-go/v3/testing/simapp/params"
+	ibcclientcli "github.com/reapchain/ibc-go/v3/modules/core/02-client/client/cli"
+	"github.com/reapchain/ibc-go/v3/testing/simapp"
+	"github.com/reapchain/ibc-go/v3/testing/simapp/params"
 )
 
 /*
 	This file contains tests from the SDK which had to deleted during the migration of
-	the IBC module from the SDK into this repository. https://github.com/cosmos/cosmos-sdk/pull/8735
+	the IBC module from the SDK into this repository. https://github.com/reapchain/cosmos-sdk/pull/8735
 
 	They can be removed once the SDK deprecates amino.
 */
