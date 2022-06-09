@@ -11,7 +11,7 @@ import (
 	proto "github.com/gogo/protobuf/proto"
 	types1 "github.com/reapchain/cosmos-sdk/codec/types"
 	query "github.com/reapchain/cosmos-sdk/types/query"
-	types "github.com/reapchain/ibc-go/modules/core/02-client/types"
+	types "github.com/reapchain/ibc-go/v3/modules/core/02-client/types"
 	_ "google.golang.org/genproto/googleapis/api/annotations"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"

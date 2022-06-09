@@ -69,8 +69,8 @@ To perform genesis migrations, the following code must be added to your existing
 ```go
 // add imports as necessary
 import (
-    ibcv100 "github.com/reapchain/ibc-go/modules/core/legacy/v100"
-    ibchost "github.com/reapchain/ibc-go/modules/core/24-host"
+    ibcv100 "github.com/reapchain/ibc-go/v3/modules/core/legacy/v100"
+    ibchost "github.com/reapchain/ibc-go/v3/modules/core/24-host"
 )
 
 ...
@@ -119,7 +119,7 @@ It handles both `UpdateClientProposal`s and `UpgradeProposal`s.
 Add this import: 
 
 ```diff
-+       ibcclienttypes "github.com/reapchain/ibc-go/modules/core/02-client/types"
++       ibcclienttypes "github.com/reapchain/ibc-go/v3/modules/core/02-client/types"
 ```
 
 Please ensure the governance module adds the correct route:
@@ -138,7 +138,7 @@ Please ensure both proposal type CLI commands are registered on the governance m
 
 Add the following import:
 ```diff
-+       ibcclientclient "github.com/reapchain/ibc-go/modules/core/02-client/client"
++       ibcclientclient "github.com/reapchain/ibc-go/v3/modules/core/02-client/client"
 ```
 
 Register the cli commands: 
