@@ -1,1 +1,17 @@
-404: Not Found
+syntax = "proto3";
+package reapchain-core.crypto;
+
+option go_package = "github.com/reapchain/reapchain-core/proto/reapchain-core/crypto";
+
+import "gogoproto/gogo.proto";
+
+// PublicKey defines the keys available for use with reapchain Validators
+message PublicKey {
+  option (gogoproto.compare) = true;
+  option (gogoproto.equal)   = true;
+
+  oneof sum {
+    bytes ed25519   = 1;
+    bytes secp256k1 = 2;
+  }
+}
