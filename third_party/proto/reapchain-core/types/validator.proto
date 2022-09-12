@@ -1,5 +1,5 @@
 syntax = "proto3";
-package reapchain.types;
+package reapchain-core.types;
 
 option go_package = "github.com/reapchain/reapchain-core/proto/reapchain-core/types";
 

@@ -1,5 +1,5 @@
 syntax = "proto3";
-package reapchain.crypto;
+package reapchain-core.crypto;
 
 option go_package = "github.com/reapchain/reapchain-core/proto/reapchain-core/crypto";
 

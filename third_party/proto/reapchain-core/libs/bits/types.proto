@@ -1,5 +1,5 @@
 syntax = "proto3";
-package reapchain.libs.bits;
+package reapchain-core.libs.bits;
 
 option go_package = "github.com/reapchain/reapchain-core/proto/reapchain-core/libs/bits";
 
