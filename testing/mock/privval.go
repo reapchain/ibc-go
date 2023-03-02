@@ -7,6 +7,7 @@ import (
 	"github.com/reapchain/reapchain-core/crypto"
 	tmproto "github.com/reapchain/reapchain-core/proto/reapchain-core/types"
 	tmtypes "github.com/reapchain/reapchain-core/types"
+	"github.com/reapchain/reapchain-core/vrfunc"
 )
 
 var _ tmtypes.PrivValidator = PV{}
@@ -50,5 +51,34 @@ func (pv PV) SignProposal(chainID string, proposal *tmproto.Proposal) error {
 		return err
 	}
 	proposal.Signature = sig
+	return nil
+}
+
+func (pv PV) SignQrn(chainID string, qrn *tmtypes.Qrn) error {
+	signBytes := qrn.GetQrnBytesForSign(chainID)
+	sig, err := pv.PrivKey.Sign(signBytes)
+	if err != nil {
+		return err
+	}
+	qrn.Signature = sig
+	return nil
+}
+
+func (pv PV) SignSettingSteeringMember(chainID string, settingSteeringMember *tmtypes.SettingSteeringMember) error {
+	signBytes := settingSteeringMember.GetSettingSteeringMemberBytesForSign(chainID)
+	sig, err := pv.PrivKey.Sign(signBytes)
+	if err != nil {
+		return err
+	}
+	settingSteeringMember.Signature = sig
+	return nil
+}
+
+func (pv PV) ProveVrf(vrf *tmtypes.Vrf) error {
+	privateKey := vrfunc.PrivateKey(pv.PrivKey.Bytes())
+	value, proof := privateKey.Prove(vrf.Seed)
+	vrf.Value = value
+	vrf.Proof = proof
+
 	return nil
 }
