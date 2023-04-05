@@ -35,7 +35,7 @@ Read on for a detailed explanation of how to write a self-contained IBC applicat
 
 ## Components Overview
 
-### [Clients](https://github.com/cosmos/ibc-go/blob/main/modules/core/02-client)
+### [Clients](https://github.com/reapchain/ibc-go/blob/main/modules/core/02-client)
 
 IBC clients are on-chain light clients. Each light client is identified by a unique client-id. 
 IBC clients track the consensus states of other blockchains, along with the proof spec necessary to 
@@ -53,9 +53,9 @@ any metadata associated with the consensus states. Consensus states are stored u
 
 The supported IBC clients are:
 
-* [Solo Machine light client](https://github.com/cosmos/ibc-go/blob/main/modules/light-clients/06-solomachine): Devices such as phones, browsers, or laptops.
-* [Tendermint light client](https://github.com/cosmos/ibc-go/blob/main/modules/light-clients/07-tendermint): The default for Cosmos SDK-based chains.
-* [Localhost (loopback) client](https://github.com/cosmos/ibc-go/blob/main/modules/light-clients/09-localhost): Useful for
+* [Solo Machine light client](https://github.com/reapchain/ibc-go/blob/main/modules/light-clients/06-solomachine): Devices such as phones, browsers, or laptops.
+* [Tendermint light client](https://github.com/reapchain/ibc-go/blob/main/modules/light-clients/07-tendermint): The default for Cosmos SDK-based chains.
+* [Localhost (loopback) client](https://github.com/reapchain/ibc-go/blob/main/modules/light-clients/09-localhost): Useful for
 testing, simulation, and relaying packets to modules on the same application.
 
 ### IBC Client Heights
@@ -112,7 +112,7 @@ Other client-types can implement their own logic to verify the IBC heights that 
 The IBC interfaces expect an `ibcexported.Height` interface, however all clients must use the concrete implementation provided in
 `02-client/types` and reproduced above.
 
-### [Connections](https://github.com/cosmos/ibc-go/blob/main/modules/core/03-connection)
+### [Connections](https://github.com/reapchain/ibc-go/blob/main/modules/core/03-connection)
 
 Connections encapsulate two `ConnectionEnd` objects on two separate blockchains. Each
 `ConnectionEnd` is associated with a client of the other blockchain (for example, the counterparty blockchain).
@@ -121,7 +121,7 @@ correct for their respective counterparties. Connections, once established, are 
 facilitating all cross-chain verifications of IBC state. A connection can be associated with any
 number of channels.
 
-### [Proofs](https://github.com/cosmos/ibc-go/blob/main/modules/core/23-commitment) and [Paths](https://github.com/cosmos/ibc-go/blob/main/modules/core/24-host)
+### [Proofs](https://github.com/reapchain/ibc-go/blob/main/modules/core/23-commitment) and [Paths](https://github.com/reapchain/ibc-go/blob/main/modules/core/24-host)
   
 In IBC, blockchains do not directly pass messages to each other over the network. Instead, to
 communicate, a blockchain commits some state to a specifically defined path that is reserved for a
@@ -136,14 +136,14 @@ Proofs are passed from core IBC to light-clients as bytes. It is up to light cli
 [ICS-24 Host State Machine Requirements](https://github.com/cosmos/ics/tree/master/spec/core/ics-024-host-requirements). 
 - The proof format that all implementations must be able to produce and verify is defined in [ICS-23 Proofs](https://github.com/confio/ics23) implementation.
 
-### [Capabilities](https://github.com/cosmos/cosmos-sdk/blob/master/docs/core/ocap.md)
+### [Capabilities](https://github.com/reapchain/cosmos-sdk/blob/master/docs/core/ocap.md)
 
 IBC is intended to work in execution environments where modules do not necessarily trust each
 other. Thus, IBC must authenticate module actions on ports and channels so that only modules with the
 appropriate permissions can use them. 
 
 This module authentication is accomplished using a [dynamic
-capability store](https://github.com/cosmos/cosmos-sdk/blob/master/docs/architecture/adr-003-dynamic-capability-store.md). Upon binding to a port or
+capability store](https://github.com/reapchain/cosmos-sdk/blob/master/docs/architecture/adr-003-dynamic-capability-store.md). Upon binding to a port or
 creating a channel for a module, IBC returns a dynamic capability that the module must claim in
 order to use that port or channel. The dynamic capability module prevents other modules from using that port or channel since
 they do not own the appropriate capability.
@@ -164,7 +164,7 @@ IBC correctly routes all packets to the relevant module using the (channelID, po
 IBC module can also communicate with another IBC module over multiple ports, with each
 `(portID<->portID)` packet stream being sent on a different unique channel.
 
-### [Ports](https://github.com/cosmos/ibc-go/blob/main/modules/core/05-port)
+### [Ports](https://github.com/reapchain/ibc-go/blob/main/modules/core/05-port)
 
 An IBC module can bind to any number of ports. Each port must be identified by a unique `portID`.
 Since IBC is designed to be secure with mutually distrusted modules operating on the same ledger,
@@ -173,7 +173,7 @@ binding a port returns a dynamic object capability. In order to take action on a
 handler. This requirement prevents a malicious module from opening channels with ports it does not own. Thus,
 IBC modules are responsible for claiming the capability that is returned on `BindPort`.
 
-### [Channels](https://github.com/cosmos/ibc-go/blob/main/modules/core/04-channel)
+### [Channels](https://github.com/reapchain/ibc-go/blob/main/modules/core/04-channel)
 
 An IBC channel can be established between two IBC ports. Currently, a port is exclusively owned by a
 single module. IBC packets are sent over channels. Just as IP packets contain the destination IP
@@ -224,7 +224,7 @@ the connection the channel exists upon is OPEN and the executing chain successfu
 that the counterparty channel has been closed.
 
 
-### [Packets](https://github.com/cosmos/ibc-go/blob/main/modules/core/04-channel)
+### [Packets](https://github.com/reapchain/ibc-go/blob/main/modules/core/04-channel)
 
 Modules communicate with each other by sending packets over IBC channels. All
 IBC packets contain the destination `portID` and `channelID` along with the source `portID` and
@@ -238,7 +238,7 @@ Thus, packet data is opaque to IBC handlers. It is incumbent on a sender module 
 their application-specific packet information into the `Data` field of packets. The receiver
 module must decode that `Data` back to the original application data.
 
-### [Receipts and Timeouts](https://github.com/cosmos/ibc-go/blob/main/modules/core/04-channel)
+### [Receipts and Timeouts](https://github.com/reapchain/ibc-go/blob/main/modules/core/04-channel)
 
 Since IBC works over a distributed network and relies on potentially faulty relayers to relay messages between ledgers, 
 IBC must handle the case where a packet does not get sent to its destination in a timely manner or at all. Packets must 
@@ -268,7 +268,7 @@ application-specific logic to timeout the packet, perhaps by rolling back the pa
 
 For this reason, most modules should use UNORDERED channels as they require fewer liveness guarantees to function effectively for users of that channel.
 
-### [Acknowledgments](https://github.com/cosmos/ibc-go/blob/main/modules/core/04-channel)
+### [Acknowledgments](https://github.com/reapchain/ibc-go/blob/main/modules/core/04-channel)
 
 Modules can also choose to write application-specific acknowledgments upon processing a packet. Acknowledgments can be done:
 

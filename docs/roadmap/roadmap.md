@@ -37,7 +37,7 @@ Let's assume that the planned release schedule looks like the following:
  
 ### Align implementation with ICS02
 
-- Finalize work for: [#284](https://github.com/cosmos/ibc-go/issues/284), [#285](https://github.com/cosmos/ibc-go/issues/285), [#286](https://github.com/cosmos/ibc-go/issues/286), [#594](https://github.com/cosmos/ibc-go/issues/594) and [#599](https://github.com/cosmos/ibc-go/issues/599). 
+- Finalize work for: [#284](https://github.com/reapchain/ibc-go/issues/284), [#285](https://github.com/reapchain/ibc-go/issues/285), [#286](https://github.com/reapchain/ibc-go/issues/286), [#594](https://github.com/reapchain/ibc-go/issues/594) and [#599](https://github.com/reapchain/ibc-go/issues/599). 
 
 ### Interchain security
 
@@ -45,38 +45,38 @@ Let's assume that the planned release schedule looks like the following:
 
 ### Backlog issues
 
-- [#545](https://github.com/cosmos/ibc-go/issues/545): Remove the `GetTransferAccount` function, since we never use the ICS20 transfer module account (every escrow address is created as a regular account).
-- [#559](https://github.com/cosmos/ibc-go/issues/559): Changes needed to support the migration to SMT storage. This is basically adding a new proof spec that will be used during connection handshake with a chain that has migrated to SMT to verify that the light client of the counterparty chain uses the correct proof specs to be able to verify proofs for that chain.
+- [#545](https://github.com/reapchain/ibc-go/issues/545): Remove the `GetTransferAccount` function, since we never use the ICS20 transfer module account (every escrow address is created as a regular account).
+- [#559](https://github.com/reapchain/ibc-go/issues/559): Changes needed to support the migration to SMT storage. This is basically adding a new proof spec that will be used during connection handshake with a chain that has migrated to SMT to verify that the light client of the counterparty chain uses the correct proof specs to be able to verify proofs for that chain.
 - And more to be added later!
 
 ## Release schedule
 
 |Release|Milestone|Date|
 |-------|---------|----|
-|[`v3.0.0-alpha2`](https://github.com/cosmos/ibc-go/releases/tag/v3.0.0-alpha2)||Jan 07, 2021|
+|[`v3.0.0-alpha2`](https://github.com/reapchain/ibc-go/releases/tag/v3.0.0-alpha2)||Jan 07, 2021|
 
 During this quarter we will also probably release versions that bump the Cosmos SDK to `v0.45` and Tendermint to `v0.35`, but at the moment of writing it is difficult to estimate when. Check our roadmap regularly for updates.
 
 ### H2 January
 
-- [`v3.0.0-beta1`](https://github.com/cosmos/ibc-go/milestone/12): Beta 1 release of `v3.0.0` including Interchain Accounts, an update of Golang from `v1.15` to `v1.17`, and some core improvements. This is a Go-API breaking release because of [#472](https://github.com/cosmos/ibc-go/issues/472) and [#675](https://github.com/cosmos/ibc-go/pull/675).
+- [`v3.0.0-beta1`](https://github.com/reapchain/ibc-go/milestone/12): Beta 1 release of `v3.0.0` including Interchain Accounts, an update of Golang from `v1.15` to `v1.17`, and some core improvements. This is a Go-API breaking release because of [#472](https://github.com/reapchain/ibc-go/issues/472) and [#675](https://github.com/reapchain/ibc-go/pull/675).
 
 ### H1 February
 
-- [`v3.0.0-rc0`](https://github.com/cosmos/ibc-go/milestone/12): Release candidate 0 of `v3.0.0` including Interchain Accounts, an update of Golang from `v1.15` to `v1.17`, and some core improvements. This is a Go-API breaking release because of [#472](https://github.com/cosmos/ibc-go/issues/472) and [#675](https://github.com/cosmos/ibc-go/pull/675).
+- [`v3.0.0-rc0`](https://github.com/reapchain/ibc-go/milestone/12): Release candidate 0 of `v3.0.0` including Interchain Accounts, an update of Golang from `v1.15` to `v1.17`, and some core improvements. This is a Go-API breaking release because of [#472](https://github.com/reapchain/ibc-go/issues/472) and [#675](https://github.com/reapchain/ibc-go/pull/675).
 
 ### H2 February
 
-- [`v3.a.0-alpha1`](https://github.com/cosmos/ibc-go/milestone/16): Alpha release of `v3.a.0` including Relayer Incentivisation. This release will include fixes to issues that surfaced during the internal audit.
+- [`v3.a.0-alpha1`](https://github.com/reapchain/ibc-go/milestone/16): Alpha release of `v3.a.0` including Relayer Incentivisation. This release will include fixes to issues that surfaced during the internal audit.
 
 ### H1 March
 
-- [`v3.0.0`](https://github.com/cosmos/ibc-go/milestone/12): Final release of `v3.0.0` including Interchain Accounts, an update of Golang from `v1.15` to `v1.17`, and some core improvements. This is a Go-API breaking release because of [#472](https://github.com/cosmos/ibc-go/issues/472) and [#675](https://github.com/cosmos/ibc-go/pull/675).
-- [`v3.a.0-beta1`](https://github.com/cosmos/ibc-go/milestone/16): Beta release of `v3.a.0` including Relayer Incentivisation. This release will include fixes to issues that surfaced during the external audit.
+- [`v3.0.0`](https://github.com/reapchain/ibc-go/milestone/12): Final release of `v3.0.0` including Interchain Accounts, an update of Golang from `v1.15` to `v1.17`, and some core improvements. This is a Go-API breaking release because of [#472](https://github.com/reapchain/ibc-go/issues/472) and [#675](https://github.com/reapchain/ibc-go/pull/675).
+- [`v3.a.0-beta1`](https://github.com/reapchain/ibc-go/milestone/16): Beta release of `v3.a.0` including Relayer Incentivisation. This release will include fixes to issues that surfaced during the external audit.
 
 ### H2 March
 
-- [`v3.a.0-rc0`](https://github.com/cosmos/ibc-go/milestone/16): Release candiate 0 `v3.1.0` including Relayer Incentivisation.
+- [`v3.a.0-rc0`](https://github.com/reapchain/ibc-go/milestone/16): Release candiate 0 `v3.1.0` including Relayer Incentivisation.
 
 ## Q2 - 2022
 
@@ -86,7 +86,7 @@ During this quarter we will also probably release versions that bump the Cosmos 
 
 ### Support for Wasm-based light clients
 
-There is an open [PR](https://github.com/cosmos/ibc-go/pull/208) that implements support for Wasm-based light clients, but it needs to be updated after the finalization of the [ICS28](https://github.com/cosmos/ibc/tree/master/spec/client/ics-008-wasm-client) specification. The PR need thorough review, more tests and potentially implementation changes.
+There is an open [PR](https://github.com/reapchain/ibc-go/pull/208) that implements support for Wasm-based light clients, but it needs to be updated after the finalization of the [ICS28](https://github.com/cosmos/ibc/tree/master/spec/client/ics-008-wasm-client) specification. The PR need thorough review, more tests and potentially implementation changes.
 
 ## Release schedule
 
@@ -94,11 +94,11 @@ During this quarter we will also probably release versions that bump the Cosmos 
 
 ### H1 April
 
-- [`v3.a.0`](https://github.com/cosmos/ibc-go/milestone/16): Final release of `v3.a.0` including Relayer Incentivisation.
-- [`v4.0.0-rc0`](https://github.com/cosmos/ibc-go/milestone/16): Release candidate 0 of `v4.0.0` including the work for the issues to bring ibc-go implementation in line with ICS02 (which are Go-API breaking changes).
+- [`v3.a.0`](https://github.com/reapchain/ibc-go/milestone/16): Final release of `v3.a.0` including Relayer Incentivisation.
+- [`v4.0.0-rc0`](https://github.com/reapchain/ibc-go/milestone/16): Release candidate 0 of `v4.0.0` including the work for the issues to bring ibc-go implementation in line with ICS02 (which are Go-API breaking changes).
 
 ### H2 April
 
-- [`v4.0.0`](https://github.com/cosmos/ibc-go/milestone/16): Release candidate 0 of `v4.0.0` including the work for the issues to bring ibc-go implementation in line with ICS02 (which are Go-API breaking changes).
+- [`v4.0.0`](https://github.com/reapchain/ibc-go/milestone/16): Release candidate 0 of `v4.0.0` including the work for the issues to bring ibc-go implementation in line with ICS02 (which are Go-API breaking changes).
 
 

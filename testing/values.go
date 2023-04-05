@@ -1,19 +1,19 @@
 /*
-	This file contains the variables, constants, and default values
-	used in the testing package and commonly defined in tests.
+This file contains the variables, constants, and default values
+used in the testing package and commonly defined in tests.
 */
 package ibctesting
 
 import (
 	"time"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
 
-	ibctransfertypes "github.com/cosmos/ibc-go/v3/modules/apps/transfer/types"
-	connectiontypes "github.com/cosmos/ibc-go/v3/modules/core/03-connection/types"
-	commitmenttypes "github.com/cosmos/ibc-go/v3/modules/core/23-commitment/types"
-	ibctmtypes "github.com/cosmos/ibc-go/v3/modules/light-clients/07-tendermint/types"
-	"github.com/cosmos/ibc-go/v3/testing/mock"
+	ibctransfertypes "github.com/reapchain/ibc-go/v3/modules/apps/transfer/types"
+	connectiontypes "github.com/reapchain/ibc-go/v3/modules/core/03-connection/types"
+	commitmenttypes "github.com/reapchain/ibc-go/v3/modules/core/23-commitment/types"
+	ibctmtypes "github.com/reapchain/ibc-go/v3/modules/light-clients/07-tendermint/types"
+	"github.com/reapchain/ibc-go/v3/testing/mock"
 )
 
 const (

@@ -13,7 +13,7 @@ If you want to update the documentation please open a pr on ibc-go.
 The documentation for IBC-Go is hosted at https://ibc.cosmos.network.
 
 built from the files in this (`/docs`) directory for
-[main](https://github.com/cosmos/ibc-go/tree/main/docs).
+[main](https://github.com/reapchain/ibc-go/tree/main/docs).
 
 ### How It Works
 
@@ -96,7 +96,7 @@ We are using [Algolia](https://www.algolia.com) to power full-text search. This 
 ## Consistency
 
 Because the build processes are identical (as is the information contained herein), this file should be kept in sync as
-much as possible with its [counterpart in the Cosmos SDK repo](https://github.com/cosmos/cosmos-sdk/tree/master/docs/DOCS_README.md).
+much as possible with its [counterpart in the Cosmos SDK repo](https://github.com/reapchain/cosmos-sdk/tree/master/docs/DOCS_README.md).
 
 ### Update and Build the RPC docs
 

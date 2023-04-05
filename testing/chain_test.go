@@ -3,11 +3,11 @@ package ibctesting_test
 import (
 	"testing"
 
+	tmtypes "github.com/reapchain/reapchain-core/types"
 	"github.com/stretchr/testify/require"
-	tmtypes "github.com/tendermint/tendermint/types"
 
-	ibctesting "github.com/cosmos/ibc-go/v3/testing"
-	"github.com/cosmos/ibc-go/v3/testing/mock"
+	ibctesting "github.com/reapchain/ibc-go/v3/testing"
+	"github.com/reapchain/ibc-go/v3/testing/mock"
 )
 
 func TestCreateSortedSignerArray(t *testing.T) {

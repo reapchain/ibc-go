@@ -305,11 +305,11 @@ module.exports = {
             {
               title: "Contributing to the docs",
               url:
-                "https://github.com/cosmos/ibc-go/blob/main/docs/DOCS_README.md"
+                "https://github.com/reapchain/ibc-go/blob/main/docs/DOCS_README.md"
             },
             {
               title: "Source code on GitHub",
-              url: "https://github.com/cosmos/ibc-go/"
+              url: "https://github.com/reapchain/ibc-go/"
             }
           ]
         }

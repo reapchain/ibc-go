@@ -3,11 +3,11 @@ package types_test
 import (
 	"testing"
 
-	"github.com/cosmos/cosmos-sdk/store/iavl"
-	"github.com/cosmos/cosmos-sdk/store/rootmulti"
-	storetypes "github.com/cosmos/cosmos-sdk/store/types"
+	"github.com/reapchain/cosmos-sdk/store/iavl"
+	"github.com/reapchain/cosmos-sdk/store/rootmulti"
+	storetypes "github.com/reapchain/cosmos-sdk/store/types"
+	"github.com/reapchain/reapchain-core/libs/log"
 	"github.com/stretchr/testify/suite"
-	"github.com/tendermint/tendermint/libs/log"
 	dbm "github.com/tendermint/tm-db"
 )
 

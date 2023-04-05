@@ -3,15 +3,15 @@ package keeper
 import (
 	"bytes"
 
-	"github.com/cosmos/cosmos-sdk/telemetry"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	"github.com/gogo/protobuf/proto"
+	"github.com/reapchain/cosmos-sdk/telemetry"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
 
-	clienttypes "github.com/cosmos/ibc-go/v3/modules/core/02-client/types"
-	"github.com/cosmos/ibc-go/v3/modules/core/03-connection/types"
-	commitmenttypes "github.com/cosmos/ibc-go/v3/modules/core/23-commitment/types"
-	"github.com/cosmos/ibc-go/v3/modules/core/exported"
+	clienttypes "github.com/reapchain/ibc-go/v3/modules/core/02-client/types"
+	"github.com/reapchain/ibc-go/v3/modules/core/03-connection/types"
+	commitmenttypes "github.com/reapchain/ibc-go/v3/modules/core/23-commitment/types"
+	"github.com/reapchain/ibc-go/v3/modules/core/exported"
 )
 
 // ConnOpenInit initialises a connection attempt on chain A. The generated connection identifier
@@ -63,17 +63,17 @@ func (k Keeper) ConnOpenInit(
 //  - Identifiers are checked on msg validation
 func (k Keeper) ConnOpenTry(
 	ctx sdk.Context,
-	previousConnectionID string, // previousIdentifier
+	previousConnectionID string,     // previousIdentifier
 	counterparty types.Counterparty, // counterpartyConnectionIdentifier, counterpartyPrefix and counterpartyClientIdentifier
 	delayPeriod uint64,
-	clientID string, // clientID of chainA
-	clientState exported.ClientState, // clientState that chainA has for chainB
+	clientID string,                         // clientID of chainA
+	clientState exported.ClientState,        // clientState that chainA has for chainB
 	counterpartyVersions []exported.Version, // supported versions of chain A
-	proofInit []byte, // proof that chainA stored connectionEnd in state (on ConnOpenInit)
-	proofClient []byte, // proof that chainA stored a light client of chainB
-	proofConsensus []byte, // proof that chainA stored chainB's consensus state at consensus height
-	proofHeight exported.Height, // height at which relayer constructs proof of A storing connectionEnd in state
-	consensusHeight exported.Height, // latest height of chain B which chain A has stored in its chain B client
+	proofInit []byte,                        // proof that chainA stored connectionEnd in state (on ConnOpenInit)
+	proofClient []byte,                      // proof that chainA stored a light client of chainB
+	proofConsensus []byte,                   // proof that chainA stored chainB's consensus state at consensus height
+	proofHeight exported.Height,             // height at which relayer constructs proof of A storing connectionEnd in state
+	consensusHeight exported.Height,         // latest height of chain B which chain A has stored in its chain B client
 ) (string, error) {
 	var (
 		connectionID       string
@@ -200,12 +200,12 @@ func (k Keeper) ConnOpenAck(
 	ctx sdk.Context,
 	connectionID string,
 	clientState exported.ClientState, // client state for chainA on chainB
-	version *types.Version, // version that ChainB chose in ConnOpenTry
+	version *types.Version,           // version that ChainB chose in ConnOpenTry
 	counterpartyConnectionID string,
-	proofTry []byte, // proof that connectionEnd was added to ChainB state in ConnOpenTry
-	proofClient []byte, // proof of client state on chainB for chainA
-	proofConsensus []byte, // proof that chainB has stored ConsensusState of chainA on its client
-	proofHeight exported.Height, // height that relayer constructed proofTry
+	proofTry []byte,                 // proof that connectionEnd was added to ChainB state in ConnOpenTry
+	proofClient []byte,              // proof of client state on chainB for chainA
+	proofConsensus []byte,           // proof that chainB has stored ConsensusState of chainA on its client
+	proofHeight exported.Height,     // height that relayer constructed proofTry
 	consensusHeight exported.Height, // latest height of chainA that chainB has stored on its chainA client
 ) error {
 	// Check that chainB client hasn't stored invalid height
@@ -307,7 +307,7 @@ func (k Keeper) ConnOpenAck(
 func (k Keeper) ConnOpenConfirm(
 	ctx sdk.Context,
 	connectionID string,
-	proofAck []byte, // proof that connection opened on ChainA during ConnOpenAck
+	proofAck []byte,             // proof that connection opened on ChainA during ConnOpenAck
 	proofHeight exported.Height, // height that relayer constructed proofAck
 ) error {
 	// Retrieve connection

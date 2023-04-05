@@ -1,14 +1,14 @@
 package types_test
 
 import (
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
+	codectypes "github.com/reapchain/cosmos-sdk/codec/types"
 
-	"github.com/cosmos/ibc-go/v3/modules/core/02-client/types"
-	commitmenttypes "github.com/cosmos/ibc-go/v3/modules/core/23-commitment/types"
-	"github.com/cosmos/ibc-go/v3/modules/core/exported"
-	ibctmtypes "github.com/cosmos/ibc-go/v3/modules/light-clients/07-tendermint/types"
-	localhosttypes "github.com/cosmos/ibc-go/v3/modules/light-clients/09-localhost/types"
-	ibctesting "github.com/cosmos/ibc-go/v3/testing"
+	"github.com/reapchain/ibc-go/v3/modules/core/02-client/types"
+	commitmenttypes "github.com/reapchain/ibc-go/v3/modules/core/23-commitment/types"
+	"github.com/reapchain/ibc-go/v3/modules/core/exported"
+	ibctmtypes "github.com/reapchain/ibc-go/v3/modules/light-clients/07-tendermint/types"
+	localhosttypes "github.com/reapchain/ibc-go/v3/modules/light-clients/09-localhost/types"
+	ibctesting "github.com/reapchain/ibc-go/v3/testing"
 )
 
 type caseAny struct {

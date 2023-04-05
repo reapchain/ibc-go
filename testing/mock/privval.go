@@ -1,12 +1,12 @@
 package mock
 
 import (
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/tendermint/tendermint/crypto"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	tmtypes "github.com/tendermint/tendermint/types"
+	cryptocodec "github.com/reapchain/cosmos-sdk/crypto/codec"
+	"github.com/reapchain/cosmos-sdk/crypto/keys/ed25519"
+	cryptotypes "github.com/reapchain/cosmos-sdk/crypto/types"
+	"github.com/reapchain/reapchain-core/crypto"
+	tmproto "github.com/reapchain/reapchain-core/proto/reapchain-core/types"
+	tmtypes "github.com/reapchain/reapchain-core/types"
 )
 
 var _ tmtypes.PrivValidator = PV{}

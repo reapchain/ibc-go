@@ -3,16 +3,16 @@ package keeper_test
 import (
 	"fmt"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	grpctypes "github.com/cosmos/cosmos-sdk/types/grpc"
-	"github.com/cosmos/cosmos-sdk/types/query"
+	codectypes "github.com/reapchain/cosmos-sdk/codec/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	grpctypes "github.com/reapchain/cosmos-sdk/types/grpc"
+	"github.com/reapchain/cosmos-sdk/types/query"
 	"google.golang.org/grpc/metadata"
 
-	"github.com/cosmos/ibc-go/v3/modules/core/02-client/types"
-	"github.com/cosmos/ibc-go/v3/modules/core/exported"
-	ibctmtypes "github.com/cosmos/ibc-go/v3/modules/light-clients/07-tendermint/types"
-	ibctesting "github.com/cosmos/ibc-go/v3/testing"
+	"github.com/reapchain/ibc-go/v3/modules/core/02-client/types"
+	"github.com/reapchain/ibc-go/v3/modules/core/exported"
+	ibctmtypes "github.com/reapchain/ibc-go/v3/modules/light-clients/07-tendermint/types"
+	ibctesting "github.com/reapchain/ibc-go/v3/testing"
 )
 
 func (suite *KeeperTestSuite) TestQueryClientState() {

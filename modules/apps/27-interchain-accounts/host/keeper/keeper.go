@@ -4,18 +4,18 @@ import (
 	"fmt"
 	"strings"
 
-	baseapp "github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	capabilitykeeper "github.com/cosmos/cosmos-sdk/x/capability/keeper"
-	capabilitytypes "github.com/cosmos/cosmos-sdk/x/capability/types"
-	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
-	"github.com/tendermint/tendermint/libs/log"
+	baseapp "github.com/reapchain/cosmos-sdk/baseapp"
+	"github.com/reapchain/cosmos-sdk/codec"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	capabilitykeeper "github.com/reapchain/cosmos-sdk/x/capability/keeper"
+	capabilitytypes "github.com/reapchain/cosmos-sdk/x/capability/types"
+	paramtypes "github.com/reapchain/cosmos-sdk/x/params/types"
+	"github.com/reapchain/reapchain-core/libs/log"
 
-	"github.com/cosmos/ibc-go/v3/modules/apps/27-interchain-accounts/host/types"
-	icatypes "github.com/cosmos/ibc-go/v3/modules/apps/27-interchain-accounts/types"
-	channeltypes "github.com/cosmos/ibc-go/v3/modules/core/04-channel/types"
-	host "github.com/cosmos/ibc-go/v3/modules/core/24-host"
+	"github.com/reapchain/ibc-go/v3/modules/apps/27-interchain-accounts/host/types"
+	icatypes "github.com/reapchain/ibc-go/v3/modules/apps/27-interchain-accounts/types"
+	channeltypes "github.com/reapchain/ibc-go/v3/modules/core/04-channel/types"
+	host "github.com/reapchain/ibc-go/v3/modules/core/24-host"
 )
 
 // Keeper defines the IBC interchain accounts host keeper
