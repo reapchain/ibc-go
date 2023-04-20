@@ -11,7 +11,7 @@ import (
 	sdk "github.com/reapchain/cosmos-sdk/types"
 	stakingtypes "github.com/reapchain/cosmos-sdk/x/staking/types"
 	tmbytes "github.com/reapchain/reapchain-core/libs/bytes"
-	tmproto "github.com/reapchain/reapchain-core/proto/reapchain-core/types"
+	tmproto "github.com/reapchain/reapchain-core/proto/podc/types"
 	tmtypes "github.com/reapchain/reapchain-core/types"
 	"github.com/stretchr/testify/suite"
 

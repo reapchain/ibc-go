@@ -121,3 +121,10 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	nhooyr.io/websocket v1.8.6 // indirect
 )
+
+
+replace (
+	github.com/reapchain/reapchain-core => ../reapchain-core
+  github.com/reapchain/cosmos-sdk => ../cosmos-sdk
+  github.com/reapchain/iavl => ../iavl
+)

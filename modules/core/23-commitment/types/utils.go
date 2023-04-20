@@ -3,7 +3,7 @@ package types
 import (
 	ics23 "github.com/confio/ics23/go"
 	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
-	crypto "github.com/reapchain/reapchain-core/proto/reapchain-core/crypto"
+	crypto "github.com/reapchain/reapchain-core/proto/podc/crypto"
 )
 
 // ConvertProofs converts crypto.ProofOps into MerkleProof

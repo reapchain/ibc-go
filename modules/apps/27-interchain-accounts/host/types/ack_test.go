@@ -5,7 +5,7 @@ import (
 
 	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
 	abcitypes "github.com/reapchain/reapchain-core/abci/types"
-	tmprotostate "github.com/reapchain/reapchain-core/proto/reapchain-core/state"
+	tmprotostate "github.com/reapchain/reapchain-core/proto/podc/state"
 	tmstate "github.com/reapchain/reapchain-core/state"
 	"github.com/stretchr/testify/suite"
 

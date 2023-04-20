@@ -7,7 +7,7 @@ import (
 	"github.com/reapchain/cosmos-sdk/codec"
 	sdk "github.com/reapchain/cosmos-sdk/types"
 	tmbytes "github.com/reapchain/reapchain-core/libs/bytes"
-	tmproto "github.com/reapchain/reapchain-core/proto/reapchain-core/types"
+	tmproto "github.com/reapchain/reapchain-core/proto/podc/types"
 	tmtypes "github.com/reapchain/reapchain-core/types"
 	"github.com/stretchr/testify/suite"
 
