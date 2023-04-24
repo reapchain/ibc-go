@@ -5,7 +5,7 @@ import (
 
 	"github.com/reapchain/cosmos-sdk/codec"
 	sdk "github.com/reapchain/cosmos-sdk/types"
-	tmproto "github.com/reapchain/reapchain-core/proto/reapchain-core/types"
+	tmproto "github.com/reapchain/reapchain-core/proto/podc/types"
 	"github.com/stretchr/testify/suite"
 
 	clienttypes "github.com/reapchain/ibc-go/v3/modules/core/02-client/types"

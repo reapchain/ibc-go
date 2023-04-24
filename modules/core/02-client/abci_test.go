@@ -5,7 +5,7 @@ import (
 
 	upgradetypes "github.com/reapchain/cosmos-sdk/x/upgrade/types"
 	abci "github.com/reapchain/reapchain-core/abci/types"
-	tmproto "github.com/reapchain/reapchain-core/proto/reapchain-core/types"
+	tmproto "github.com/reapchain/reapchain-core/proto/podc/types"
 	"github.com/stretchr/testify/suite"
 
 	client "github.com/reapchain/ibc-go/v3/modules/core/02-client"

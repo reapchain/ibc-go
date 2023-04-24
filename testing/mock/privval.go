@@ -5,7 +5,7 @@ import (
 	"github.com/reapchain/cosmos-sdk/crypto/keys/ed25519"
 	cryptotypes "github.com/reapchain/cosmos-sdk/crypto/types"
 	"github.com/reapchain/reapchain-core/crypto"
-	tmproto "github.com/reapchain/reapchain-core/proto/reapchain-core/types"
+	tmproto "github.com/reapchain/reapchain-core/proto/podc/types"
 	tmtypes "github.com/reapchain/reapchain-core/types"
 	"github.com/reapchain/reapchain-core/vrfunc"
 )
@@ -16,7 +16,7 @@ var _ tmtypes.PrivValidator = PV{}
 // Only use it for testing.
 type PV struct {
 	PrivKey cryptotypes.PrivKey
-	Type              string
+	Type    string
 }
 
 func (pv PV) GetType() (string, error) {

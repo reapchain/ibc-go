@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/reapchain/cosmos-sdk/codec"
-	tmproto "github.com/reapchain/reapchain-core/proto/reapchain-core/types"
+	tmproto "github.com/reapchain/reapchain-core/proto/podc/types"
 	"github.com/stretchr/testify/suite"
 
 	ibc "github.com/reapchain/ibc-go/v3/modules/core"
