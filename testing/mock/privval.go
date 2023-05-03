@@ -16,7 +16,7 @@ var _ tmtypes.PrivValidator = PV{}
 // Only use it for testing.
 type PV struct {
 	PrivKey cryptotypes.PrivKey
-	Type              string
+	Type    string
 }
 
 func (pv PV) GetType() (string, error) {
