@@ -54,8 +54,8 @@ func (pv PV) SignProposal(chainID string, proposal *tmproto.Proposal) error {
 	return nil
 }
 
-func (pv PV) SignQrn(chainID string, qrn *tmtypes.Qrn) error {
-	signBytes := qrn.GetQrnBytesForSign(chainID)
+func (pv PV) SignQrn(qrn *tmtypes.Qrn) error {
+	signBytes := qrn.GetQrnBytesForSign()
 	sig, err := pv.PrivKey.Sign(signBytes)
 	if err != nil {
 		return err
@@ -64,8 +64,8 @@ func (pv PV) SignQrn(chainID string, qrn *tmtypes.Qrn) error {
 	return nil
 }
 
-func (pv PV) SignSettingSteeringMember(chainID string, settingSteeringMember *tmtypes.SettingSteeringMember) error {
-	signBytes := settingSteeringMember.GetSettingSteeringMemberBytesForSign(chainID)
+func (pv PV) SignSettingSteeringMember(settingSteeringMember *tmtypes.SettingSteeringMember) error {
+	signBytes := settingSteeringMember.GetSettingSteeringMemberBytesForSign()
 	sig, err := pv.PrivKey.Sign(signBytes)
 	if err != nil {
 		return err
