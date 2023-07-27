@@ -12,8 +12,8 @@ require (
 	github.com/gorilla/mux v1.8.0
 	github.com/grpc-ecosystem/grpc-gateway v1.16.0
 	github.com/rakyll/statik v0.1.7
-	github.com/reapchain/cosmos-sdk v0.45.7-reap.sdk.v0.4.9
-	github.com/reapchain/reapchain-core v0.34.20-reap.core.v0.1.17
+	github.com/reapchain/cosmos-sdk v0.45.7-reap.sdk.v0.4.10
+	github.com/reapchain/reapchain-core v0.34.20-reap.core.v0.1.18
 	github.com/regen-network/cosmos-proto v0.3.1
 	github.com/spf13/cast v1.5.0
 	github.com/spf13/cobra v1.5.0
@@ -98,7 +98,7 @@ require (
 	github.com/prometheus/common v0.34.0 // indirect
 	github.com/prometheus/procfs v0.7.3 // indirect
 	github.com/rcrowley/go-metrics v0.0.0-20201227073835-cf1acfcdf475 // indirect
-	github.com/reapchain/iavl v0.19.0-reap.iavl.v0.2.8 // indirect
+	github.com/reapchain/iavl v0.19.0-reap.iavl.v0.2.9 // indirect
 	github.com/rs/cors v1.8.2 // indirect
 	github.com/rs/zerolog v1.27.0 // indirect
 	github.com/sasha-s/go-deadlock v0.3.1 // indirect
@@ -120,11 +120,4 @@ require (
 	gopkg.in/ini.v1 v1.66.6 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	nhooyr.io/websocket v1.8.6 // indirect
-)
-
-
-replace (
-	github.com/reapchain/reapchain-core => ../reapchain-core
-  github.com/reapchain/cosmos-sdk => ../cosmos-sdk
-  github.com/reapchain/iavl => ../iavl
 )
