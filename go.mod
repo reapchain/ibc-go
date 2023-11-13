@@ -12,7 +12,7 @@ require (
 	github.com/gorilla/mux v1.8.0
 	github.com/grpc-ecosystem/grpc-gateway v1.16.0
 	github.com/rakyll/statik v0.1.7
-	github.com/reapchain/cosmos-sdk v0.45.7-reap.sdk.v0.4.15
+	github.com/reapchain/cosmos-sdk v0.45.7-reap.sdk.v0.4.16
 	github.com/reapchain/reapchain-core v0.34.20-reap.core.v0.1.22
 	github.com/regen-network/cosmos-proto v0.3.1
 	github.com/spf13/cast v1.5.0
