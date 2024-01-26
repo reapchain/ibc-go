@@ -1,3 +1,5 @@
+This is forked from cosmos/ibc-go v3.2.0.
+
 # ibc-go
 <div align="center">
   <a href="https://github.com/reapchain/ibc-go/releases/latest">
@@ -26,7 +28,7 @@
   <a href="https://sourcegraph.com/github.com/reapchain/ibc-go?badge">
     <img alt="Imported by" src="https://sourcegraph.com/github.com/reapchain/ibc-go/-/badge.svg" />
   </a>
-    <img alt="Lint Status" src="https://github.com/reapchain/cosmos-sdk/workflows/Lint/badge.svg" />
+    <!-- <img alt="Lint Status" src="https://github.com/reapchain/cosmos-sdk/workflows/Lint/badge.svg" /> -->
 </div>
 
 The Inter-Blockchain Communication protocol (IBC) allows blockchains to talk to each other. IBC handles transport across different sovereign blockchains. This end-to-end, connection-oriented, stateful protocol provides reliable, ordered, and authenticated communication between heterogeneous blockchains. This IBC implementation in Golang is built as a Cosmos SDK module.
